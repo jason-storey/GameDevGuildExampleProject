@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 namespace PokemonApp
 {
@@ -14,5 +15,8 @@ namespace PokemonApp
             if (pageSize <= 0) pageSize = DEFAULT_PAGE_SIZE;
             return items.Skip((page - 1) * pageSize).Take(pageSize);
         }
+        
+        public static int GetPageCount<T>(this IList<T> items,int amountPerPage)=> 
+            Mathf.RoundToInt(items.Count / (float)amountPerPage);
     }
 }
