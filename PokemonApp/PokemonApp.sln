@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonApp", "PokemonApp\PokemonApp.csproj", "{EDDA612A-A605-429C-BA37-088E07AB1201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonAppTests", "PokemonAppTests\PokemonAppTests.csproj", "{876728DA-85B5-49C6-BA9C-061CE00977E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDDA612A-A605-429C-BA37-088E07AB1201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDA612A-A605-429C-BA37-088E07AB1201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDA612A-A605-429C-BA37-088E07AB1201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDA612A-A605-429C-BA37-088E07AB1201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
