@@ -23,3 +23,5 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\obj
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\obj\Debug\PokemonAppTests.pdb
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.xml
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Newtonsoft.Json.xml

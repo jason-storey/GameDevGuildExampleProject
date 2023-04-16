@@ -39,6 +39,9 @@
         <Reference Include="FluentAssertions, Version=6.10.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
           <HintPath>..\packages\FluentAssertions.6.10.0\lib\net47\FluentAssertions.dll</HintPath>
         </Reference>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
         <Reference Include="NSubstitute, Version=5.0.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
           <HintPath>..\packages\NSubstitute.5.0.0\lib\net462\NSubstitute.dll</HintPath>
         </Reference>
@@ -61,6 +64,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="EnumerableExtensions_Should.cs" />
+        <Compile Include="InvertedIndex_Should.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

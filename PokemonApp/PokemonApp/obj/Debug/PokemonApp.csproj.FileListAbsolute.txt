@@ -7,3 +7,5 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debu
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.csproj.CopyComplete
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\Newtonsoft.Json.xml
