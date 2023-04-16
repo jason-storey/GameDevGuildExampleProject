@@ -24,7 +24,7 @@ namespace PokemonAppTests
         [Test]
         public void When_created_has_no_elements()
         {
-            _index.ItemCount.Should().Be(0);
+            _index.ValueCount.Should().Be(0);
             _index.KeyCount.Should().Be(0);
             _index.Keys.Should().BeEmpty();
             _index.Values.Should().BeEmpty();
@@ -35,7 +35,7 @@ namespace PokemonAppTests
         public void When_adding_element_mark_as_dirty()
         {
             _index.Add("Jason", "Awesome","Cool","Dude");
-            _index.ItemCount.Should().Be(1);
+            _index.ValueCount.Should().Be(1);
             _index.KeyCount.Should().Be(3);
             _index.Keys.Count().Should().Be(3);
             _index.Values.Count().Should().Be(1);
@@ -84,7 +84,7 @@ namespace PokemonAppTests
         {
             SetupTestData();
             
-            var result = _index.FindByQuery("tag2 tag4");
+            var result = _index.Query("tag2 OR tag4");
             result.Should().BeEquivalentTo(new List<string> { "Item1", "Item2", "Item3", "Item4" });
         }
 
@@ -92,7 +92,7 @@ namespace PokemonAppTests
         public void When_querying_with_empty_returns_empty()
         {
             SetupTestData();
-            var results = _index.FindByQuery("");
+            var results = _index.Query("");
             results.Count().Should().Be(0);
         }
 
@@ -108,7 +108,7 @@ namespace PokemonAppTests
         public void When_querying_with_exclusion_and_include_returns()
         {
             SetupTestData();
-            var result = _index.FindByQuery("tag2 !tag1");
+            var result = _index.Query("tag2 AND NOT tag1");
             result.Should().BeEquivalentTo(new List<string> { "Item2" });
         }
         
@@ -121,7 +121,7 @@ namespace PokemonAppTests
 
             var json = JsonConvert.SerializeObject(_index,_settings);
             var restored = JsonConvert.DeserializeObject<InvertedIndex<string>>(json,_settings);
-            restored.ItemCount.Should().Be(_index.ItemCount);
+            restored.ValueCount.Should().Be(_index.ValueCount);
             restored.Keys.Count().Should().Be(_index.Keys.Count());
             restored.Values.Count().Should().Be(_index.Values.Count());
             restored.IsDirty.Should().BeFalse();
@@ -131,7 +131,7 @@ namespace PokemonAppTests
         public void When_adding_a_blank_label_do_not_add()
         {
             _index.Add("Apple","Fruit",string.Empty);
-            _index.ItemCount.Should().Be(1);
+            _index.ValueCount.Should().Be(1);
         }
         
         [Test]

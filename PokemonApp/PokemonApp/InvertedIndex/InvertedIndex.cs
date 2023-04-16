@@ -17,7 +17,7 @@ namespace PokemonApp
         }
 
         public IEnumerable<T> this[string key] => _indexes.TryGetValue(key, out var k) ? k : Enumerable.Empty<T>();
-        public int ItemCount => _elements.Count;
+        public int ValueCount => _elements.Count;
         public int KeyCount => _indexes.Count;
         public IEnumerable<string> Keys => _indexes.Keys;
         public IEnumerable<T> Values => _elements;
@@ -56,28 +56,6 @@ namespace PokemonApp
                 if (hasAllTags) results.Add(item);
             }
             return results;
-        }
-        
-        public IEnumerable<T> FindByQuery(string query)
-        {
-            if (string.IsNullOrWhiteSpace(query)) return Enumerable.Empty<T>();
-            var includeTags = new List<string>();
-            var excludeTags = new List<string>();
-            var tokens = query.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var token in tokens)
-            {
-                if (token.StartsWith("!"))
-                    excludeTags.Add(token.Substring(1));
-                else
-                    includeTags.Add(token);
-            }
-
-            return _elements.Where(item =>
-            {
-                if (excludeTags.Any(tag => _indexes[tag].Contains(item)))
-                    return false;
-                return includeTags.Count == 0 || includeTags.Any(tag => _indexes[tag].Contains(item));
-            });
         }
         
         public IEnumerable<T> FindByAnyTag(params string[] tags)
@@ -121,7 +99,11 @@ namespace PokemonApp
             }
             IsDirty = true;
         }
-        
+
+        public IEnumerator<T> GetEnumerator() => ((IEnumerable<T>)_elements).GetEnumerator();
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+
         public class JsonConverter : Newtonsoft.Json.JsonConverter
         {
             public override bool CanConvert(Type objectType) => objectType == typeof(InvertedIndex<T>);
@@ -174,9 +156,5 @@ namespace PokemonApp
                 return invertedIndex;
             }
         }
-
-        public IEnumerator<T> GetEnumerator() => ((IEnumerable<T>)_elements).GetEnumerator();
-
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }

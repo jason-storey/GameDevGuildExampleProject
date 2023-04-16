@@ -63,6 +63,7 @@
         <Reference Include="System.Xml.Linq" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CreateInvertedIndexFromPokemonFile.cs" />
         <Compile Include="EnumerableExtensions_Should.cs" />
         <Compile Include="InvertedIndex_Should.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +77,11 @@
         <Project>{edda612a-a605-429c-ba37-088e07ab1201}</Project>
         <Name>PokemonApp</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Data\pokemon.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

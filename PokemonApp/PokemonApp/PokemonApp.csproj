@@ -56,7 +56,9 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="EnumerableExtensions.cs" />
-        <Compile Include="InvertedIndex.cs" />
+        <Compile Include="InvertedIndex\InvertedIndex.cs" />
+        <Compile Include="InvertedIndex\InvertedIndexExtensions.cs" />
+        <Compile Include="InvertedIndex\InvertedIndexQuery.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

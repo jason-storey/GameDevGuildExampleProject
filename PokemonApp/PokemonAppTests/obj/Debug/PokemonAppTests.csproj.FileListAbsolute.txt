@@ -25,3 +25,4 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.xml
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Data\pokemon.json
