@@ -31,6 +31,18 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
+    <Target Name="CopyOutputDllsToPlugins" AfterTargets="Build">
+        <PropertyGroup>
+            <PluginsFolder>..\..\U.SearchingAndCaching\Assets\Plugins\JasonStorey</PluginsFolder>
+            <OutputDll>$(TargetDir)$(TargetName)$(TargetExt)</OutputDll>
+        </PropertyGroup>
+        <ItemGroup>
+            <DllToCopy Include="$(OutputDll)" />
+        </ItemGroup>
+        <MakeDir Directories="$(PluginsFolder)" Condition="!Exists('$(PluginsFolder)')" />
+        <Copy SourceFiles="@(DllToCopy)" DestinationFolder="$(PluginsFolder)" SkipUnchangedFiles="true" />
+        <Message Text="Output DLLs have been copied to the 'plugins' folder" Importance="high" />
+    </Target>
     <ItemGroup>
         <Reference Include="System" />
         <Reference Include="System.Core" />
