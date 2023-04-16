@@ -1,0 +1,9 @@
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\PokemonApp.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\PokemonApp.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\UnityEngine.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\UnityEngine.xml
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.csproj.AssemblyReference.cache
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.csproj.CoreCompileInputs.cache
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.csproj.CopyComplete
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\obj\Debug\PokemonApp.pdb
