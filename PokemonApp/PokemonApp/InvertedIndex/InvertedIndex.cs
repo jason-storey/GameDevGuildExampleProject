@@ -16,6 +16,14 @@ namespace PokemonApp
             _indexes = new Dictionary<string, HashSet<T>>(StringComparer.OrdinalIgnoreCase);
         }
 
+        public IEnumerable<T> this[int index]
+        {
+            get
+            {
+                var matching = Keys.ElementAtOrDefault(index);
+                return string.IsNullOrWhiteSpace(matching) ? Enumerable.Empty<T>() : _indexes[matching];
+            }
+        }
         public IEnumerable<T> this[string key] => _indexes.TryGetValue(key, out var k) ? k : Enumerable.Empty<T>();
         public int ValueCount => _elements.Count;
         public int KeyCount => _indexes.Count;

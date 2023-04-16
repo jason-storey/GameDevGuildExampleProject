@@ -59,6 +59,7 @@
         <Compile Include="InvertedIndex\InvertedIndex.cs" />
         <Compile Include="InvertedIndex\InvertedIndexExtensions.cs" />
         <Compile Include="InvertedIndex\InvertedIndexQuery.cs" />
+        <Compile Include="Models\Pokemon.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
