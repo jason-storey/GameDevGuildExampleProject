@@ -15,7 +15,7 @@ namespace JCore
             return items.Skip((page - 1) * pageSize).Take(pageSize);
         }
         
-        public static int GetPageCount<T>(this IList<T> items,int amountPerPage)=> 
-            Convert.ToInt32(Math.Round(items.Count / (double)amountPerPage));
+        public static int GetPageCount<T>(this IList<T> items,int amountPerPage) => 
+            amountPerPage > items.Count ? 1 : Convert.ToInt32(Math.Ceiling(items.Count / (double)amountPerPage));
     }
 }
