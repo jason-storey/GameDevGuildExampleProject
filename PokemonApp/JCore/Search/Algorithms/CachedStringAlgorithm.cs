@@ -15,7 +15,7 @@ namespace JCore.Search
         public bool IsMatch(string searchTerm, string content) => 
             Get(searchTerm).Equals(Get(content));
 
-        string Get(string term)
+        public string Get(string term)
         {
             var item = _cache.GetById(term);
             if (!string.IsNullOrWhiteSpace(item)) return item;

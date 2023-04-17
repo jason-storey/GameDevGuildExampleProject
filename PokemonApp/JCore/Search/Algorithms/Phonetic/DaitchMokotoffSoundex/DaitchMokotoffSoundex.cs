@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JCore.Collections;
 
 namespace JCore.Search
 {
@@ -109,6 +110,18 @@ namespace JCore.Search
             { "R", new[] { "9" } },
             { "X", new[] { "54" } }
         };
+        
+        public static HashedListDictionary<string> CreateCache(IEnumerable<string> elements)
+        {
+            var cache = new HashedListDictionary<string>();
+            foreach (var element in elements)
+            {
+                var all = Generate(element);
+                foreach (var item in all) 
+                    cache.AddElement(item, element);
+            }
+            return cache;
+        }
         
         public static bool Match(this string word1, string word2) => Generate(word1) == Generate(word2);
         public static List<string> ToDaitchMokotoffSoundexes(this string s) => Generate(s);

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
+using JCore.Collections;
 
 namespace JCore.Search
 {
@@ -31,6 +33,14 @@ namespace JCore.Search
 
         public static bool Match(this string word1, string word2) => Generate(word1) == Generate(word2);
 
+        public static HashedListDictionary<string> CreateCache(IEnumerable<string> elements)
+        {
+            var cache = new HashedListDictionary<string>();
+            foreach (var element in elements) 
+                cache.AddElement(Generate(element), element);
+            return cache;
+        }
+        
         public static string ToSoundex(this string s) => Generate(s);
 
         public static bool MatchesAsSoundexes(this string s, string other)

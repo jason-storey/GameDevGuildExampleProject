@@ -1,4 +1,7 @@
-﻿namespace JCore.Search
+﻿using System.Collections.Generic;
+using JCore.Collections;
+
+namespace JCore.Search
 {
     public interface ISearchAlgorithm
     {

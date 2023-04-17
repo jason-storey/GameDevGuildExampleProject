@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
+using JCore.Collections;
+
 namespace JCore.Search
 {
     public static class MRA
@@ -59,6 +62,7 @@ namespace JCore.Search
             word = SimplifyConsonants(word);
             return word.Length > 6 ? word.Substring(0, 6) : word;
         }
+        
 
         static string RemoveVowels(string word)
         {
