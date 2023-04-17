@@ -16,6 +16,13 @@ namespace PokemonApp
             _indexes = new Dictionary<string, HashSet<T>>(StringComparer.OrdinalIgnoreCase);
         }
 
+        public Dictionary<string, List<T>> ToDictionary()
+        {
+            var dict = new Dictionary<string, List<T>>();
+            foreach (var kvp in _indexes) dict[kvp.Key] = kvp.Value.ToList();
+            return dict;
+        }
+        
         public IEnumerable<T> this[int index]
         {
             get
@@ -24,12 +31,17 @@ namespace PokemonApp
                 return string.IsNullOrWhiteSpace(matching) ? Enumerable.Empty<T>() : _indexes[matching];
             }
         }
-        public IEnumerable<T> this[string key] => _indexes.TryGetValue(key, out var k) ? k : Enumerable.Empty<T>();
+
+        public bool ContainsKey(string key) => _indexes.ContainsKey(key);
+        
+        public IEnumerable<T> this[string key] => GetTagsFor(key);
         public int ValueCount => _elements.Count;
         public int KeyCount => _indexes.Count;
         public IEnumerable<string> Keys => _indexes.Keys;
         public IEnumerable<T> Values => _elements;
         public bool IsDirty { get; private set; }
+
+        public IEnumerable<T> GetTagsFor(string key) =>_indexes.TryGetValue(key, out var k) ? k : Enumerable.Empty<T>();
 
         public IEnumerable<T> WithAllOf(params string[] tags)
         {
