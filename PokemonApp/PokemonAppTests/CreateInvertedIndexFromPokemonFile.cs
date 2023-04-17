@@ -1,8 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using JCore.Collections;
 using Newtonsoft.Json;
 using PokemonApp.Models;
+
 namespace PokemonApp
 {
     public static class CreateInvertedIndexFromPokemonFileUsingConverter

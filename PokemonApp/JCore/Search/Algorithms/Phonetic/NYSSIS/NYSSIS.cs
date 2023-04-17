@@ -1,6 +1,5 @@
 ﻿using System.Text;
-
-namespace JCore.Common
+namespace JCore.Search
 {
     public static class NYSSIS
     {

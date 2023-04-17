@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using JCore.Common;
+using JCore.Search;
 
-namespace JCore.Search
+namespace JCore.Collections
 {
     public class Index<T> : IEnumerable<T>,IRepository<T>
     {

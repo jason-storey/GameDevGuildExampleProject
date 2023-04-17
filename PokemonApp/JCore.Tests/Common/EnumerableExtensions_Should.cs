@@ -2,8 +2,7 @@
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using PokemonApp;
-namespace PokemonAppTests
+namespace JCore.Tests
 {
     [TestFixture]
     public class EnumerableExtensions_Should

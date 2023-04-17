@@ -1,4 +1,4 @@
-﻿using JCore.Common;
+﻿using JCore.Collections;
 
 namespace JCore.Search
 {

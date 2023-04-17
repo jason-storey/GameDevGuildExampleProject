@@ -1,6 +1,6 @@
-﻿using JCore.Search;
+﻿using JCore.Collections;
 
-namespace JCore.Common
+namespace JCore.Search
 {
     public class SoundexAlgorithm : CachedStringAlgorithm
     {

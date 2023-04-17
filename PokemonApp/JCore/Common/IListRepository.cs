@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace JCore.Common
+namespace JCore
 {
     public interface IListRepository<T>
     {

@@ -1,6 +1,4 @@
-﻿using JCore.Common;
-
-namespace JCore.Search.Algorithms
+﻿namespace JCore.Search.Algorithms
 {
     public class CaverphoneAlgorithm : CachedStringAlgorithm
     {

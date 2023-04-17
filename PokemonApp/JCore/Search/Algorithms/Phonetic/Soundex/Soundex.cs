@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace JCore
+namespace JCore.Search
 {
     public static class Soundex
     {

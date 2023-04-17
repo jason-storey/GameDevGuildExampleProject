@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace PokemonApp
+namespace JCore.Collections
 {
     public class InvertedIndex<T> : IEnumerable<T>
     {

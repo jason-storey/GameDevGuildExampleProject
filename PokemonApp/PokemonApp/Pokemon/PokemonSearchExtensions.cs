@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JCore.Collections;
 using PokemonApp.Models;
 using PokemonApp.StringSearch;
 

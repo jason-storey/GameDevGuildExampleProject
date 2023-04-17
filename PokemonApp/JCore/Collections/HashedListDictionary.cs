@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using JCore.Common;
-
-namespace JCore.Search
+namespace JCore.Collections
 {
     public class HashedListDictionary<T> : IListRepository<T>
     {

@@ -32,12 +32,21 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Collections\Extensions\InvertedIndexExtensions.cs" />
+        <Compile Include="Collections\HashedListDictionary.cs" />
+        <Compile Include="Collections\Index.cs" />
+        <Compile Include="Collections\InvertedIndex.cs" />
+        <Compile Include="Collections\Misc\InvertedIndexQuery.cs" />
+        <Compile Include="Common\Extensions\EnumerableExtensions.cs" />
         <Compile Include="Common\IListRepository.cs" />
         <Compile Include="Common\IRepository.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,8 +66,9 @@
         <Compile Include="Search\Algorithms\Phonetic\NYSSIS\NYSSISAlgorithm.cs" />
         <Compile Include="Search\Algorithms\Phonetic\Soundex\Soundex.cs" />
         <Compile Include="Search\Algorithms\Phonetic\Soundex\SoundexAlgorithm.cs" />
-        <Compile Include="Search\Collections\HashedListDictionary.cs" />
-        <Compile Include="Search\Collections\Index.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,4 @@
-﻿namespace JCore.Common
+﻿namespace JCore.Search
 {
     public class NYSSISAlgorithm : CachedStringAlgorithm
     {

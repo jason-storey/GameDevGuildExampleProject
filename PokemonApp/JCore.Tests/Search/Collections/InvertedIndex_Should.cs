@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
+using JCore.Collections;
 using Newtonsoft.Json;
 using NUnit.Framework;
-using PokemonApp;
-using static PokemonApp.CreateInvertedIndexFromPokemonFileUsingConverter;
-
-namespace PokemonAppTests
+namespace JCore.Tests
 {
     [TestFixture]
     public class InvertedIndex_Should
@@ -159,24 +157,7 @@ namespace PokemonAppTests
                 loopedElements.Add(element);
             loopedElements.Should().BeEquivalentTo(expected);
         }
-
-        [Test]
-        public void When_loading_loads()
-        {
-            var b = Create();
-
-            var habitatIndex = b.Filter(x => x.Habitat);
-
-            var allHabitats = habitatIndex.Keys.ToList();
-
-            var caveAndWater = habitatIndex.Query("cave OR sea").ToList();
-            var types = caveAndWater.Filter(x => x.Generation)[0];
-
-
-            var genOneCaveAndWaterPokemon = types.ToList();
-        }
         
-
         JsonSerializerSettings _settings;
         InvertedIndex<string> _index;
     }

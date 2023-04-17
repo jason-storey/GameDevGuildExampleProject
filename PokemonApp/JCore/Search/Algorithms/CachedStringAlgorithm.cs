@@ -1,7 +1,5 @@
 ﻿using System;
-using JCore.Search;
-
-namespace JCore.Common
+namespace JCore.Search
 {
     public abstract class CachedStringAlgorithm : ISearchAlgorithm
     {

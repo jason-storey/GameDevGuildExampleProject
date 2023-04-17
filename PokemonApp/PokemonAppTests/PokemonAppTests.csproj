@@ -64,8 +64,6 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="CreateInvertedIndexFromPokemonFile.cs" />
-        <Compile Include="EnumerableExtensions_Should.cs" />
-        <Compile Include="InvertedIndex_Should.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
@@ -73,6 +71,10 @@
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\JCore\JCore.csproj">
+        <Project>{cab1e194-cb64-446b-859f-ff65bea353ae}</Project>
+        <Name>JCore</Name>
+      </ProjectReference>
       <ProjectReference Include="..\PokemonApp\PokemonApp.csproj">
         <Project>{edda612a-a605-429c-ba37-088e07ab1201}</Project>
         <Name>PokemonApp</Name>

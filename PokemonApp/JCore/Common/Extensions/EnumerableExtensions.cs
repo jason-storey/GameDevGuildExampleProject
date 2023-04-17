@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
-
-namespace PokemonApp
+namespace JCore
 {
     public static class EnumerableExtensions
     {
@@ -17,6 +16,6 @@ namespace PokemonApp
         }
         
         public static int GetPageCount<T>(this IList<T> items,int amountPerPage)=> 
-            Mathf.RoundToInt(items.Count / (float)amountPerPage);
+            Convert.ToInt32(Math.Round(items.Count / (double)amountPerPage));
     }
 }

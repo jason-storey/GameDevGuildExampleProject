@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using JCore.Search;
 
-namespace JCore.Common
+namespace JCore.Search
 {
     public abstract class CachedStringListAlgorithm : ISearchAlgorithm
     {

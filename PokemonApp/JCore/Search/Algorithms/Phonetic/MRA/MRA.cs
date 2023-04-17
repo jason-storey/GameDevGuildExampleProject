@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-
 namespace JCore.Search
 {
     public static class MRA
