@@ -46,6 +46,7 @@
     <ItemGroup>
         <Compile Include="Collections\AutocompleteTrie.cs" />
         <Compile Include="Collections\BKTree.cs" />
+        <Compile Include="Collections\DropoutStack.cs" />
         <Compile Include="Collections\Extensions\InvertedIndexExtensions.cs" />
         <Compile Include="Collections\Extensions\ListExtensions.cs" />
         <Compile Include="Collections\HashedListDictionary.cs" />
@@ -53,6 +54,9 @@
         <Compile Include="Collections\InvertedIndex.cs" />
         <Compile Include="Collections\Misc\InvertedIndexQuery.cs" />
         <Compile Include="Collections\WeightedAutocompleteTrie.cs" />
+        <Compile Include="Commands\CommandLineParser.cs" />
+        <Compile Include="Commands\CommandRunner.cs" />
+        <Compile Include="Commands\ICommand.cs" />
         <Compile Include="Common\Extensions\EnumerableExtensions.cs" />
         <Compile Include="Common\IListRepository.cs" />
         <Compile Include="Common\IRepository.cs" />
