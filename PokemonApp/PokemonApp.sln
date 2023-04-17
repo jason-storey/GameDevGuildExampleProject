@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonApp", "PokemonApp\Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonAppTests", "PokemonAppTests\PokemonAppTests.csproj", "{876728DA-85B5-49C6-BA9C-061CE00977E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCore", "JCore\JCore.csproj", "{CAB1E194-CB64-446B-859F-FF65BEA353AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCore.Tests", "JCore.Tests\JCore.Tests.csproj", "{3010CAA1-F235-4330-A497-EBD42AB93EF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{876728DA-85B5-49C6-BA9C-061CE00977E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB1E194-CB64-446B-859F-FF65BEA353AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB1E194-CB64-446B-859F-FF65BEA353AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB1E194-CB64-446B-859F-FF65BEA353AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB1E194-CB64-446B-859F-FF65BEA353AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3010CAA1-F235-4330-A497-EBD42AB93EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3010CAA1-F235-4330-A497-EBD42AB93EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3010CAA1-F235-4330-A497-EBD42AB93EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3010CAA1-F235-4330-A497-EBD42AB93EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
