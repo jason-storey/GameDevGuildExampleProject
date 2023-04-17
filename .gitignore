@@ -22,3 +22,4 @@ PokemonApp/PokemonAppTests/obj/Debug/PokemonAppTests.csproj.FileListAbsolute.txt
 PokemonApp/PokemonAppTests/obj/Debug/PokemonAppTests.dll
 PokemonApp/PokemonAppTests/obj/Debug/PokemonAppTests.pdb
 U.SearchingAndCaching/Assets/Resources/DOTweenSettings.asset
+*.pdb
