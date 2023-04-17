@@ -21,6 +21,133 @@ namespace JCore.Tests
         }
 
         [Test]
+    public void When_Adding_Item_With_Key_Returns_Item_In_Index()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = "key";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.AreEqual(item, _index[key]);
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Null_Key_Returns_Item_Not_In_Index()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = null;
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.Has(key));
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Empty_Key_Returns_Item_Not_In_Index()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = "";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.Has(key));
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Whitespace_Key_Returns_Item_Not_In_Index()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = " ";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.Has(key));
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Key_Returns_Dictionary_With_Item()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = "key";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.AreEqual(item, _index.ToDictionary()[key]);
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Null_Key_Returns_Dictionary_Without_Item()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = null;
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.ToDictionary().ContainsKey(key));
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Empty_Key_Returns_Dictionary_Without_Item()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = "";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.ToDictionary().ContainsKey(key));
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Whitespace_Key_Returns_Dictionary_Without_Item()
+    {
+        // Arrange
+        string item = "hello world";
+        string key = " ";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.ToDictionary().ContainsKey(key));
+    }
+
+    [Test]
+    public void When_Adding_Item_With_Null_Item_Returns_Dictionary_Without_Item()
+    {
+        // Arrange
+        string item = null;
+        string key = "key";
+
+        // Act
+        _index.Add(item, key);
+
+        // Assert
+        Assert.IsFalse(_index.ToDictionary().ContainsKey(key));
+    }
+
+    
+        [Test]
         public void When_created_has_no_elements()
         {
             _index.ValueCount.Should().Be(0);
@@ -90,7 +217,6 @@ namespace JCore.Tests
         [Test]
         public void When_querying_with_empty_returns_empty()
         {
-            SetupTestData();
             var results = _index.Query("");
             results.Count().Should().Be(0);
         }

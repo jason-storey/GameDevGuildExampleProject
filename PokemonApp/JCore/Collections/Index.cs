@@ -22,6 +22,8 @@ namespace JCore.Collections
             _index[itemKey] = item;
         }
 
+        public void Add(T item, string key) => _index[key] = item;
+
         public IEnumerable<T> Search(string searchTerm, ISearchAlgorithm algorithm)
         {
             var matches = _index.Keys.Where(x => algorithm.IsMatch(searchTerm, x));
@@ -41,7 +43,14 @@ namespace JCore.Collections
         public T this[string key] => TryGet(key, out var item) ? item : default;
         
         bool TryGet(string key, out T item) => _index.TryGetValue(key, out item);
-        
+
+        public static Index<T> From(Dictionary<string, T> dict,bool caseSensitive = false)
+        {
+            var index = new Index<T>(caseSensitive);
+            foreach (var kvp in dict) 
+                index.Add(kvp.Value, kvp.Key);
+            return index;
+        }
         public static Index<T> From(IEnumerable<T> items, Func<T, string> key,bool caseSensitive = false)
         {
             var index = new Index<T>(caseSensitive);

@@ -32,6 +32,8 @@ namespace JCore.Collections
             }
         }
 
+        public bool Has(string key) => _indexes.ContainsKey(key);
+
         public bool ContainsKey(string key) => _indexes.ContainsKey(key);
         
         public IEnumerable<T> this[string key] => GetTagsFor(key);
