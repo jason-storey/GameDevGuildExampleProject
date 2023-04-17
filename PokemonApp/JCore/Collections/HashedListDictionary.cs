@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using FluentAssertions;
+
 namespace JCore.Collections
 {
     public class HashedListDictionary<T> : IListRepository<T>
@@ -42,12 +44,7 @@ namespace JCore.Collections
             return true;
         }
 
-        public void SetElements(string term, IEnumerable<T> items)
-        {
-            var hashset = new HashSet<T>();
-            foreach (var item in items) 
-                hashset.Add(item);
-            _elements[term] = hashset;
-        }
+        public void SetElements(string term, IEnumerable<T> items) => 
+            _elements[term] = new HashSet<T>(items);
     }
 }
