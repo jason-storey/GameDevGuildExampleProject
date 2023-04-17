@@ -23,3 +23,6 @@ PokemonApp/PokemonAppTests/obj/Debug/PokemonAppTests.dll
 PokemonApp/PokemonAppTests/obj/Debug/PokemonAppTests.pdb
 U.SearchingAndCaching/Assets/Resources/DOTweenSettings.asset
 *.pdb
+PokemonApp/PokemonApp/obj/Debug/PokemonApp.csproj.AssemblyReference.cache
+PokemonApp/PokemonAppTests/obj/Debug/PokemonAppTests.csproj.AssemblyReference.cache
+PokemonApp/JCore.Tests/obj/Debug/JCore.Tests.csproj.AssemblyReference.cache
