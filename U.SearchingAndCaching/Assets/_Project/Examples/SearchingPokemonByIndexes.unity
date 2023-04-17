@@ -123,3 +123,187 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &551911062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551911064}
+  - component: {fileID: 551911063}
+  - component: {fileID: 551911065}
+  m_Layer: 0
+  m_Name: FindPokemonByQuery
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &551911063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551911062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fa32077c6ece4469046e04122a29e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _saveFile: {fileID: 4900000, guid: 8a03b772f6fa73d4c9fe9652bf0b0786, type: 3}
+  _habitatSynonyms: {fileID: 4900000, guid: d69cc98a2d46b3c468a507b51e20f95a, type: 3}
+  _named: 
+  types: 
+  habitat: 
+  _closestActualHabitat: 
+  _generation: -1
+  _order: 1
+  _paginate: 0
+  _pageSize: 10
+  _page: 1
+  _aboutResults: 
+  _results: []
+--- !u!4 &551911064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551911062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &551911065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551911062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55a12f317877e4d8cccac3fd6a986f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _assets: {fileID: 4900000, guid: d69cc98a2d46b3c468a507b51e20f95a, type: 3}
+  _aliases:
+  - Name: rough-terrain
+    Aliases:
+    - rocky
+    - rocks
+    - sheer
+    - cliff
+    - harsh
+    - desolate
+    - isolated
+    - inhospitable
+    - rough-terrain
+  - Name: waters-edge
+    Aliases:
+    - stream
+    - rain
+    - drip
+    - waterfall
+    - port
+    - fishing
+    - boat
+    - waters-edge
+  - Name: sea
+    Aliases:
+    - water
+    - ocean
+    - open
+    - lake
+    - river
+    - stream
+    - sea
+  - Name: mountain
+    Aliases:
+    - hill
+    - high
+    - top
+    - sky
+    - high
+    - mountain
+  - Name: grassland
+    Aliases:
+    - grass
+    - brush
+    - forests
+    - trees
+    - earth
+    - leafy
+    - shrubs
+    - shrubbery
+    - grassland
+  - Name: forest
+    Aliases:
+    - arboreal
+    - biome
+    - boreal
+    - canopy
+    - coniferous
+    - deciduous
+    - dense
+    - ecosystem
+    - evergreen
+    - fauna
+    - ferns
+    - flora
+    - foliage
+    - grove
+    - jungle
+    - old-growth
+    - overstory
+    - rainforest
+    - shrub
+    - taiga
+    - temperate
+    - thicket
+    - timberland
+    - trees
+    - tropical
+    - underbrush
+    - understory
+    - wilderness
+    - wood
+    - woodland
+  - Name: urban
+    Aliases:
+    - city
+    - people
+    - town
+    - crowds
+    - houses
+    - homes
+    - suburb
+    - buildings
+    - urban
+  - Name: cave
+    Aliases:
+    - cavern
+    - dark
+    - underground
+    - beneath
+    - ground
+    - cave
+    - dirt
+  - Name: rare
+    Aliases:
+    - shiny
+    - unique
+    - special
+    - legendary
+    - unknown
+    - hidden
+    - rare
+  _minified: 1
+  _saved: '{"cliff":["rough-terrain"],"desolate":["rough-terrain"],"harsh":["rough-terrain"],"inhospitable":["rough-terrain"],"isolated":["rough-terrain"],"rocks":["rough-terrain"],"rocky":["rough-terrain"],"rough-terrain":["rough-terrain"],"sheer":["rough-terrain"],"boat":["waters-edge"],"drip":["waters-edge"],"fishing":["waters-edge"],"port":["waters-edge"],"rain":["waters-edge"],"stream":["waters-edge","sea"],"waterfall":["waters-edge"],"waters-edge":["waters-edge"],"lake":["sea"],"ocean":["sea"],"open":["sea"],"river":["sea"],"sea":["sea"],"water":["sea"],"high":["mountain"],"hill":["mountain"],"mountain":["mountain"],"sky":["mountain"],"top":["mountain"],"brush":["grassland"],"earth":["grassland"],"forests":["grassland"],"grass":["grassland"],"grassland":["grassland"],"leafy":["grassland"],"shrubbery":["grassland"],"shrubs":["grassland"],"trees":["grassland","forest"],"arboreal":["forest"],"biome":["forest"],"boreal":["forest"],"canopy":["forest"],"coniferous":["forest"],"deciduous":["forest"],"dense":["forest"],"ecosystem":["forest"],"evergreen":["forest"],"fauna":["forest"],"ferns":["forest"],"flora":["forest"],"foliage":["forest"],"grove":["forest"],"jungle":["forest"],"old-growth":["forest"],"overstory":["forest"],"rainforest":["forest"],"shrub":["forest"],"taiga":["forest"],"temperate":["forest"],"thicket":["forest"],"timberland":["forest"],"tropical":["forest"],"underbrush":["forest"],"understory":["forest"],"wilderness":["forest"],"wood":["forest"],"woodland":["forest"],"buildings":["urban"],"city":["urban"],"crowds":["urban"],"homes":["urban"],"houses":["urban"],"people":["urban"],"suburb":["urban"],"town":["urban"],"urban":["urban"],"beneath":["cave"],"cave":["cave"],"cavern":["cave"],"dark":["cave"],"ground":["cave"],"underground":["cave"],"hidden":["rare"],"legendary":["rare"],"rare":["rare"],"shiny":["rare"],"special":["rare"],"unique":["rare"],"unknown":["rare"]}'
