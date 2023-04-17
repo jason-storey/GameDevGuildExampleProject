@@ -9,47 +9,56 @@ public class InvertedIndexQuery<T>
 
     public InvertedIndexQuery(InvertedIndex<T> index) => _index = index;
 
-    public IEnumerable<T> ExecuteQuery(string query)
+    public IEnumerable<T> ExecuteQuery(string query,Func<string,string> beforeTokenProcess = null)
     {
         if(string.IsNullOrWhiteSpace(query)) return Enumerable.Empty<T>();
-        var tokens = Tokenize(query);
-        var postfix = ConvertToPostfix(tokens);
-        var stack = new Stack<IEnumerable<T>>();
-        foreach (var token in postfix)
+        try
         {
-            switch (token)
+            var tokens = Tokenize(query);
+            var postfix = ConvertToPostfix(tokens);
+            var stack = new Stack<IEnumerable<T>>();
+            foreach (var token in postfix)
             {
-                case "AND":
-                case "&":
+                switch (token)
                 {
-                    var right = stack.Pop();
-                    var left = stack.Pop();
-                    stack.Push(left.Intersect(right));
-                    break;
-                }
-                case "OR":
-                case "|":
-                {
-                    var right = stack.Pop();
-                    var left = stack.Pop();
-                    stack.Push(left.Union(right));
-                    break;
-                }
-                case "!":
-                case "NOT":
-                {
-                    IEnumerable<T> items = !stack.Any() ? _index : stack.Pop();
-                    stack.Push(_index.Values.Except(items));
-                    break;
-                }
-                default:
-                {
-                    stack.Push(_index[token]);
-                    break;
+                    case "AND":
+                    case "&":
+                    {
+                        var right = stack.Pop();
+                        var left = stack.Pop();
+                        stack.Push(left.Intersect(right));
+                        break;
+                    }
+                    case "OR":
+                    case "|":
+                    {
+                        var right = stack.Pop();
+                        var left = stack.Pop();
+                        stack.Push(left.Union(right));
+                        break;
+                    }
+                    case "!":
+                    case "NOT":
+                    {
+                        IEnumerable<T> items = !stack.Any() ? _index : stack.Pop();
+                        stack.Push(_index.Values.Except(items));
+                        break;
+                    }
+                    default:
+                    {
+                        var actualToken = beforeTokenProcess == null ?  token : beforeTokenProcess?.Invoke(token);
+                        stack.Push(_index[actualToken]);
+                        break;
+                    }
                 }
             }
+
+            return stack.Pop();
         }
-        return stack.Pop();
+        catch
+        {
+            return Enumerable.Empty<T>();
+        }
     }
 
     static IEnumerable<string> Tokenize(string query)
