@@ -59,7 +59,8 @@
         <Compile Include="Commands\ICommand.cs" />
         <Compile Include="Common\Extensions\EnumerableExtensions.cs" />
         <Compile Include="Common\IListRepository.cs" />
-        <Compile Include="Common\IRepository.cs" />
+        <Compile Include="Contracts\IReadonlyRepository.cs" />
+        <Compile Include="Contracts\IRepository.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Search\Algorithms\CachedStringAlgorithm.cs" />
         <Compile Include="Search\Algorithms\CachedStringListAlgorithm.cs" />

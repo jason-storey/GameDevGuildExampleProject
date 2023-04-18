@@ -56,12 +56,15 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="StringSearch\Soundex.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\JCore.Application\JCore.Application.csproj">
+        <Project>{c0bf7390-ba24-4058-9840-1bdef7525758}</Project>
+        <Name>JCore.Application</Name>
+      </ProjectReference>
       <ProjectReference Include="..\JCore\JCore.csproj">
         <Project>{cab1e194-cb64-446b-859f-ff65bea353ae}</Project>
         <Name>JCore</Name>
@@ -70,11 +73,6 @@
         <Project>{916da447-062b-43fd-9690-1d3effda0efc}</Project>
         <Name>PokemonService</Name>
       </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="InvertedIndex" />
-      <Folder Include="Models" />
-      <Folder Include="Pokemon" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

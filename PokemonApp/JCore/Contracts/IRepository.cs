@@ -2,7 +2,7 @@
 
 namespace JCore
 {
-    public interface IRepository<T>
+    public interface IRepository<T> : IReadonlyRepository<T>
     {
         T GetById(string key);
         IEnumerable<T> GetAll();
