@@ -28,3 +28,7 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JCore.pdb
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\PokemonService.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\PokemonService.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JCore.Application.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JCore.Application.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.xml

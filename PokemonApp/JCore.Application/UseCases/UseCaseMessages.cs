@@ -6,5 +6,6 @@ namespace JCore.Application
         public static string INVALID_SEARCH_STRING = "Invalid Search String";
         public static string EMPTY_SEARCH_STRING = "Empty Search";
         public static string INTERNAL_ERROR = "An Error Has Occured";
+        public static string PROBABLE_SPELLING_MISTAKE = "Spelling Mistake";
     }
 }

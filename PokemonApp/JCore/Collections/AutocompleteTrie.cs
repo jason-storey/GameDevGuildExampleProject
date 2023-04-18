@@ -50,5 +50,10 @@ namespace JCore.Search
             foreach (var pair in node.Children) result.AddRange(DFS(pair.Value, prefix + pair.Key));
             return result;
         }
+
+        public void InsertAll(params string[] words)
+        {
+            foreach (var w in words) Insert(w);
+        }
     }
 }

@@ -59,6 +59,10 @@
         <Compile Include="Pokemon.cs" />
         <Compile Include="PokemonApiRepository.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="SimpleSearchApp\SearchApplicationFactory.cs" />
+        <Compile Include="SimpleSearchApp\SearchAppViewBinder.cs" />
+        <Compile Include="SimpleSearchApp\SearchAppViewer.cs" />
+        <Compile Include="SimpleSearchApp\SimpleViewFactory.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

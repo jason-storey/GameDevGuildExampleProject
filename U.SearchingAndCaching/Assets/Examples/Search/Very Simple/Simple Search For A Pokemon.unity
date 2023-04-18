@@ -4012,10 +4012,11 @@ MonoBehaviour:
   - Name: miraidon-glide-mode
     Id: 1281
     Types: []
-  _useFakeData: 0
+  _useFakeData: 1
   _allowEmptySearches: 0
   _search: 
   _autoComplete: []
+  _didYouMean: 
   _results:
   - Name: charmander
     Id: 4

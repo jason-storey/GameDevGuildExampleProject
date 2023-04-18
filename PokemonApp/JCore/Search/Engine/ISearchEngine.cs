@@ -7,7 +7,10 @@ namespace JCore.Search
     {
         IEnumerable<T> Search(Func<T, bool> predicate);
 
+        void AddRange(params T[] items);
+
         IEnumerable<string> AutoComplete(string query);
         IEnumerable<T> Search(string query);
+        bool TrySpellcheck(string search, out string suggestion);
     }
 }

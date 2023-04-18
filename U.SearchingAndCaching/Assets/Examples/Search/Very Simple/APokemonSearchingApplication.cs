@@ -1,18 +1,16 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using JCore;
 using JCore.Application;
-using JCore.Application.UseCases;
 using JCore.Extensions;
-using JCore.Search;
 using PokemonApp;
 using PokemonApp.Repositories;
+using PokemonApp.SimpleSearchApp;
 using UnityEngine;
-using static JCore.Application.UseCaseMessages;
+
 namespace JasonStorey.Examples.SimpleSearch
 {
-    public class APokemonSearchingApplication : MonoBehaviour
+    public class APokemonSearchingApplication : MonoBehaviour,SearchAppViewer
     {
         [Header("Data")]
         [SerializeField]
@@ -32,63 +30,27 @@ namespace JasonStorey.Examples.SimpleSearch
         List<string> _autoComplete;
 
         [SerializeField]
-        List<Pokemon> _results;
-
-        App<Pokemon> _app;
-
-        [ContextMenu("Search")]
-        void PerformSearch() => Search.PerformSearch();
-
-        App<Pokemon> App => _app ??= new App<Pokemon>(Ui, SearchEngine);
-
-        SearchByString<Pokemon> _searcher;
-        SearchByString<Pokemon> Search
-        {
-            get
-            {
-                if (_searcher != null) return _searcher;
-                var search = App.Search();
-                search.AttemptEmptySearchAnyway = _allowEmptySearches;
-                return _searcher = search;
-            }
-        }
+        string _didYouMean;
         
-        ViewFactory<Pokemon> Ui
-        {
-            get
-            {
-                var ui = new SimpleViewFactory<Pokemon>();
-                ui.SetResultsDisplay(x => _results = x.ToList());
-                ui.SetSearchProvider(() => _search);
-                ui.SetAutoComplete(x=>_autoComplete = x.ToList());
-                ui.SetMessageHandler(OnMessageReceived);
-                return ui;
-            }
-        }
-
-        void OnValidate() => Search.UpdateAutoComplete();
-
-        void OnMessageReceived(Message message)
-        {
-            if(message.Is(INTERNAL_ERROR)) Debug.LogException(message.Context as Exception);
-            if(message.Is(EMPTY_SEARCH_STRING)) Debug.Log("You didn't type anything to search for!");
-            if(message.Is(NO_RESULTS)) Debug.Log("Your search had no results");
-            if(message.Is(INVALID_SEARCH_STRING)) Debug.LogWarning("There was a problem with your search query!");
-        }
-
-        IReadonlyRepository<Pokemon> Data => _useFakeData ? _fakeData.ToRepository() : new PokemonApiRepository();
-        ISearchEngine<Pokemon> SearchEngine
-        {
-            get
-            {
-                if (_searchEngine != null) return _searchEngine;
-                var autocomplete = new Autocomplete<Pokemon>();
-                autocomplete.AddSelector(x=>x.Name);
-                autocomplete.AddRange(Data);
-                return _searchEngine = new SearchEngineV1<Pokemon>(Data,autocomplete);
-            }
-        }
-
-        ISearchEngine<Pokemon> _searchEngine;
+        [SerializeField]
+        List<Pokemon> _results;
+        
+        [ContextMenu("Search")]
+        public void DoSearch() => App.PerformSearch();
+        void OnValidate() => App.DoValidation();
+        
+        #region Binding
+        
+        SearchAppViewBinder App => _application ??= new SearchAppViewBinder(this);
+        public void OnResultsReceived(IEnumerable<Pokemon> results) => _results = results.ToList();
+        public string ProvideSearchString() => _search;
+        public void ReceivedAutoComplete(IEnumerable<string> autoComplete) => _autoComplete = autoComplete.ToList();
+        public void ReceivedDidYouMean(string alternativeSpelling) => _didYouMean = alternativeSpelling;
+        public void OnMessageReceived(Message message) { }
+        public IReadonlyRepository<Pokemon> ProvideData =>_useFakeData ? _fakeData.ToRepository() : new PokemonApiRepository();
+        
+        SearchAppViewBinder _application;
+        
+        #endregion
     }
 }

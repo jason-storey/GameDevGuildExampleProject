@@ -58,6 +58,11 @@ namespace JCore.Application.UseCases
         public void UpdateAutoComplete()
         {
             var search = _view.Search;
+            if (_search.TrySpellcheck(search, out var s))
+            {
+                _view.DidYouMean = s;
+                Say(PROBABLE_SPELLING_MISTAKE);
+            }
             _view.AutoComplete = String.IsNullOrWhiteSpace(search) ? new List<string>() : _search.AutoComplete(search);
         }
 

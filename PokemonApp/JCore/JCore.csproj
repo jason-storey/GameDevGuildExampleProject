@@ -82,11 +82,15 @@
         <Compile Include="Search\Algorithms\Phonetic\Soundex\SoundexAlgorithm.cs" />
         <Compile Include="Search\AutoComplete\Autocomplete.cs" />
         <Compile Include="Search\AutoComplete\IAutoCompleteProvider.cs" />
+        <Compile Include="Search\AutoComplete\PropertySelectors.cs" />
         <Compile Include="Search\Engine\ISearchEngine.cs" />
         <Compile Include="Search\Engine\SearchEngineSimple.cs" />
         <Compile Include="Search\Engine\SearchEngineV1.cs" />
+        <Compile Include="Search\FuzzyMatcher\IFuzzyMatcher.cs" />
         <Compile Include="Search\Ranking\BM25.cs" />
         <Compile Include="Search\Ranking\TfIdfRanker.cs" />
+        <Compile Include="Search\SpellingCorrection\BKLevensteinSpellingCorrector.cs" />
+        <Compile Include="Search\SpellingCorrection\SpellingCorrection.cs" />
         <Compile Include="Search\Tokenizers\AdvancedTokenizer.cs" />
         <Compile Include="Search\Tokenizers\BooleanTokenizer.cs" />
         <Compile Include="Search\Tokenizers\ITokenizer.cs" />

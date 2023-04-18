@@ -2,8 +2,9 @@
 
 namespace JCore.Search
 {
-    public interface IAutoCompleteProvider<T>
+    public interface IAutoCompleteProvider<in T>
     {
         IEnumerable<string> GetSuggestions(string input);
+        void AddRange(params T[] items);
     }
 }
