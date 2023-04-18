@@ -7,5 +7,6 @@ namespace JCore
         void Update(string key, T item);
         void Delete(string key);
         void Add(T item);
+        
     }
 }

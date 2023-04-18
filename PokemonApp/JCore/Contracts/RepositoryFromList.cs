@@ -42,6 +42,8 @@ namespace JCore
         
         IEnumerable<T> GetAll() => _items;
 
+        public T this[string key] => GetById(key);
+
         public void Update(string key, T item) =>
             TryOperateOnValidId(key, index =>
             {

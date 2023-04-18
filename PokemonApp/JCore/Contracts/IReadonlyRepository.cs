@@ -6,5 +6,6 @@ namespace JCore
     {
         T GetById(string key);
         IEnumerable<T> GetAll();
+        T this[string key] { get; }
     }
 }

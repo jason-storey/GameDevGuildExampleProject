@@ -6,7 +6,7 @@ using JCore.Search;
 
 namespace JCore.Collections
 {
-    public class Index<T> : IEnumerable<T>,IRepository<T>
+    public class Index<T> : IRepository<T>
     {
         readonly Dictionary<string, T> _index;
         readonly Func<T, string> _createKey;

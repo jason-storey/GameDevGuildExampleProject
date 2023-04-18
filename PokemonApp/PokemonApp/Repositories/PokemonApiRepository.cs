@@ -36,6 +36,8 @@ namespace PokemonApp.Repositories
             return task.Result.Select(single => new Pokemon { Id = i++, Name = single }).ToList();
         }
 
+        public Pokemon this[string key] => GetById(key);
+
 
         public void Update(string key, Pokemon item)
         {
