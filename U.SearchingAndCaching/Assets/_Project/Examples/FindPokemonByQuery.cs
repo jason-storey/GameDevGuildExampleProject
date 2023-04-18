@@ -1,8 +1,9 @@
+/**
 using System.Collections.Generic;
 using System.Linq;
+using JCore;
+using JCore.Collections;
 using Newtonsoft.Json;
-using PokemonApp;
-using PokemonApp.Models;
 using UnityEngine;
 namespace JasonStorey
 {
@@ -90,7 +91,7 @@ namespace JasonStorey
             _totalPages = _allResults.GetPageCount(_pageSize);
             if (_page >= _totalPages) _page = _totalPages-1;
         }
-
+/*
         List<Pokemon> GetResults() =>
             _allPokemon
                 .InGeneration(_generation)
@@ -98,7 +99,7 @@ namespace JasonStorey
                 .SoundsLike(_named)
                 .QueryWith(x=>x.Habitat,habitat,_habitatAlternatives)
                 .OrderBy(_order).ToList();
-        
+     
         IEnumerable<Pokemon> Paginated => !_paginate ? _allResults : _allResults.Paginated(_pageSize, _page);
 
         List<string> Names => Paginated.Select(x => $"{x.Id} - {x.Name}").ToList();
@@ -114,3 +115,4 @@ namespace JasonStorey
     
     
 }
+    **/

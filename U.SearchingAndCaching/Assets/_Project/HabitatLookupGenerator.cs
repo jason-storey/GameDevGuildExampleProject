@@ -1,9 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using JCore.Collections;
 using Newtonsoft.Json;
-using PokemonApp;
 using UnityEngine;
 
 namespace JasonStorey

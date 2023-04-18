@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Text;
+using JCore;
 using PokemonApp;
 using UnityEngine;
 using Random = UnityEngine.Random;

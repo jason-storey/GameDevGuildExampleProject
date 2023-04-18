@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace JCore.Extensions
 {
@@ -11,5 +12,7 @@ namespace JCore.Extensions
                 if (!set.Add(list[i]))
                     list.RemoveAt(i);
         }
+
+
     }
 }
