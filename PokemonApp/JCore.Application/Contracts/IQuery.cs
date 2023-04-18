@@ -7,4 +7,9 @@ namespace JCore.Application
     {
         Task<IEnumerable<T>> Execute();
     }
+
+    public interface IQueryFactory<T>
+    {
+        IQuery<T> Search(string keyword);
+    }
 }
