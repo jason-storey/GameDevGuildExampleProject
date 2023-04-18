@@ -40,11 +40,14 @@
     <ItemGroup>
         <Compile Include="Contracts\IQuery.cs" />
         <Compile Include="Contracts\View.cs" />
+        <Compile Include="Contracts\ViewFactory.cs" />
         <Compile Include="Presenters\StringSearchPresenter.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Queries\SearchARepositoryByString.cs" />
         <Compile Include="UseCases\SearchByString.cs" />
+        <Compile Include="UseCases\UseCaseMessages.cs" />
         <Compile Include="Views\StringSearchView.cs" />
+        <Compile Include="Views\Ui_Search_Simple.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\JCore\JCore.csproj">

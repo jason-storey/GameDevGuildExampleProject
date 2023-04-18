@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f734e7b9ade438840a8793d345df2e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _available:
+  _fakeData:
   - Name: bulbasaur
     Id: 1
     Types: []
@@ -4012,8 +4012,7 @@ MonoBehaviour:
   - Name: miraidon-glide-mode
     Id: 1281
     Types: []
-  _search: 34
-  _results:
-  - Name: nidoking
-    Id: 34
-    Types: []
+  _useFakeData: 0
+  _allowEmptySearches: 0
+  _search: 
+  _results: []

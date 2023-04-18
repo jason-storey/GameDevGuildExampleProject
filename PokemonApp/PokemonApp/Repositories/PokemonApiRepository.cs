@@ -21,6 +21,7 @@ namespace PokemonApp.Repositories
 
         public Pokemon GetById(string key)
         {
+            if (string.IsNullOrWhiteSpace(key)) return null;
             var task = Task.Run(() => _api.GetPokemon(key));
             task.Wait();
             var toServicePokemon = Convert(task.Result);
@@ -47,5 +48,10 @@ namespace PokemonApp.Repositories
         public void Add(Pokemon item)
         {
         }
+    }
+
+    public static class RepositoryExtensions
+    {
+        public static IReadonlyRepository<Pokemon> ToRepository(this PokemonApi api) => new PokemonApiRepository(api);
     }
 }

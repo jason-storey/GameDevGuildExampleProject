@@ -55,10 +55,9 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Application.cs" />
+        <Compile Include="CoolPokemonApp.cs" />
         <Compile Include="Factories\QueryFactory.cs" />
-        <Compile Include="Factories\UsecaseFactory.cs" />
-        <Compile Include="Factories\ViewFactory.cs" />
+        <Compile Include="Factories\PokemonUsecaseFactory.cs" />
         <Compile Include="Models\ModelFactory.cs" />
         <Compile Include="Models\Pokemon.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ namespace PokemonApp
 {
     public class SearchForPokemon : SearchByString<Pokemon>
     {
-        public SearchForPokemon(IQueryFactory<Pokemon> queryFactory, StringSearchView<Pokemon> view) : base(queryFactory, view)
+        public SearchForPokemon(IQueryFactory<Pokemon> query, StringSearchView<Pokemon> view) : base(query, view)
         {
         }
     }
