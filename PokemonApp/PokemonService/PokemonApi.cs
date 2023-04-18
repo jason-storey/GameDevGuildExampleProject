@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -12,6 +13,7 @@ namespace PokemonService
         protected virtual void OnRequestSent(string url, HttpResponseMessage responses) => RequestReceived?.Invoke(url, responses);
         public event Action<string, HttpResponseMessage> RequestReceived;
 
+        List<string> _names;
 
         public PokemonApi()
         {
@@ -32,6 +34,7 @@ namespace PokemonService
             return JsonConvert.DeserializeObject<ResourceList>(json);
         }
 
+        
         
         #region plumbing
         
@@ -85,5 +88,13 @@ namespace PokemonService
             JsonConvert.DeserializeObject<PokemonResource>(await GetJson($"pokemon/{i}"));
         public async Task<PokemonResource> GetPokemon(string name) => 
             JsonConvert.DeserializeObject<PokemonResource>(await GetJson($"pokemon/{name}"));
+
+        public async Task<IEnumerable<string>> GetAllPokemonNames()
+        {
+            if (_names != null) return _names;
+            var json = await GetJson("pokemon?offset=0&limit=2000");
+            _names = JsonConvert.DeserializeObject<ResourceList>(json).results.Select(x=>x.name).ToList();
+            return _names;
+        }
     }
 }
