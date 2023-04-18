@@ -1,0 +1,4019 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &2006822685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2006822686}
+  - component: {fileID: 2006822687}
+  m_Layer: 0
+  m_Name: Search For A Pokemon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2006822686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006822685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2006822687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006822685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f734e7b9ade438840a8793d345df2e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _available:
+  - Name: bulbasaur
+    Id: 1
+    Types: []
+  - Name: ivysaur
+    Id: 2
+    Types: []
+  - Name: venusaur
+    Id: 3
+    Types: []
+  - Name: charmander
+    Id: 4
+    Types: []
+  - Name: charmeleon
+    Id: 5
+    Types: []
+  - Name: charizard
+    Id: 6
+    Types: []
+  - Name: squirtle
+    Id: 7
+    Types:
+    - Spicy
+  - Name: wartortle
+    Id: 8
+    Types: []
+  - Name: blastoise
+    Id: 9
+    Types: []
+  - Name: caterpie
+    Id: 10
+    Types: []
+  - Name: metapod
+    Id: 11
+    Types: []
+  - Name: butterfree
+    Id: 12
+    Types: []
+  - Name: weedle
+    Id: 13
+    Types: []
+  - Name: kakuna
+    Id: 14
+    Types: []
+  - Name: beedrill
+    Id: 15
+    Types: []
+  - Name: pidgey
+    Id: 16
+    Types: []
+  - Name: pidgeotto
+    Id: 17
+    Types: []
+  - Name: pidgeot
+    Id: 18
+    Types: []
+  - Name: rattata
+    Id: 19
+    Types: []
+  - Name: raticate
+    Id: 20
+    Types: []
+  - Name: spearow
+    Id: 21
+    Types: []
+  - Name: fearow
+    Id: 22
+    Types: []
+  - Name: ekans
+    Id: 23
+    Types: []
+  - Name: arbok
+    Id: 24
+    Types: []
+  - Name: pikachu
+    Id: 25
+    Types: []
+  - Name: raichu
+    Id: 26
+    Types: []
+  - Name: sandshrew
+    Id: 27
+    Types: []
+  - Name: sandslash
+    Id: 28
+    Types: []
+  - Name: nidoran-f
+    Id: 29
+    Types: []
+  - Name: nidorina
+    Id: 30
+    Types: []
+  - Name: nidoqueen
+    Id: 31
+    Types: []
+  - Name: nidoran-m
+    Id: 32
+    Types: []
+  - Name: nidorino
+    Id: 33
+    Types: []
+  - Name: nidoking
+    Id: 34
+    Types: []
+  - Name: clefairy
+    Id: 35
+    Types: []
+  - Name: clefable
+    Id: 36
+    Types: []
+  - Name: vulpix
+    Id: 37
+    Types: []
+  - Name: ninetales
+    Id: 38
+    Types: []
+  - Name: jigglypuff
+    Id: 39
+    Types: []
+  - Name: wigglytuff
+    Id: 40
+    Types: []
+  - Name: zubat
+    Id: 41
+    Types: []
+  - Name: golbat
+    Id: 42
+    Types: []
+  - Name: oddish
+    Id: 43
+    Types: []
+  - Name: gloom
+    Id: 44
+    Types: []
+  - Name: vileplume
+    Id: 45
+    Types: []
+  - Name: paras
+    Id: 46
+    Types: []
+  - Name: parasect
+    Id: 47
+    Types: []
+  - Name: venonat
+    Id: 48
+    Types: []
+  - Name: venomoth
+    Id: 49
+    Types: []
+  - Name: diglett
+    Id: 50
+    Types: []
+  - Name: dugtrio
+    Id: 51
+    Types: []
+  - Name: meowth
+    Id: 52
+    Types: []
+  - Name: persian
+    Id: 53
+    Types: []
+  - Name: psyduck
+    Id: 54
+    Types: []
+  - Name: golduck
+    Id: 55
+    Types: []
+  - Name: mankey
+    Id: 56
+    Types: []
+  - Name: primeape
+    Id: 57
+    Types: []
+  - Name: growlithe
+    Id: 58
+    Types: []
+  - Name: arcanine
+    Id: 59
+    Types: []
+  - Name: poliwag
+    Id: 60
+    Types: []
+  - Name: poliwhirl
+    Id: 61
+    Types: []
+  - Name: poliwrath
+    Id: 62
+    Types: []
+  - Name: abra
+    Id: 63
+    Types: []
+  - Name: kadabra
+    Id: 64
+    Types: []
+  - Name: alakazam
+    Id: 65
+    Types: []
+  - Name: machop
+    Id: 66
+    Types: []
+  - Name: machoke
+    Id: 67
+    Types: []
+  - Name: machamp
+    Id: 68
+    Types: []
+  - Name: bellsprout
+    Id: 69
+    Types: []
+  - Name: weepinbell
+    Id: 70
+    Types: []
+  - Name: victreebel
+    Id: 71
+    Types: []
+  - Name: tentacool
+    Id: 72
+    Types: []
+  - Name: tentacruel
+    Id: 73
+    Types: []
+  - Name: geodude
+    Id: 74
+    Types: []
+  - Name: graveler
+    Id: 75
+    Types: []
+  - Name: golem
+    Id: 76
+    Types: []
+  - Name: ponyta
+    Id: 77
+    Types: []
+  - Name: rapidash
+    Id: 78
+    Types: []
+  - Name: slowpoke
+    Id: 79
+    Types: []
+  - Name: slowbro
+    Id: 80
+    Types: []
+  - Name: magnemite
+    Id: 81
+    Types: []
+  - Name: magneton
+    Id: 82
+    Types: []
+  - Name: farfetchd
+    Id: 83
+    Types: []
+  - Name: doduo
+    Id: 84
+    Types: []
+  - Name: dodrio
+    Id: 85
+    Types: []
+  - Name: seel
+    Id: 86
+    Types: []
+  - Name: dewgong
+    Id: 87
+    Types: []
+  - Name: grimer
+    Id: 88
+    Types: []
+  - Name: muk
+    Id: 89
+    Types: []
+  - Name: shellder
+    Id: 90
+    Types: []
+  - Name: cloyster
+    Id: 91
+    Types: []
+  - Name: gastly
+    Id: 92
+    Types: []
+  - Name: haunter
+    Id: 93
+    Types: []
+  - Name: gengar
+    Id: 94
+    Types: []
+  - Name: onix
+    Id: 95
+    Types: []
+  - Name: drowzee
+    Id: 96
+    Types: []
+  - Name: hypno
+    Id: 97
+    Types: []
+  - Name: krabby
+    Id: 98
+    Types: []
+  - Name: kingler
+    Id: 99
+    Types: []
+  - Name: voltorb
+    Id: 100
+    Types: []
+  - Name: electrode
+    Id: 101
+    Types: []
+  - Name: exeggcute
+    Id: 102
+    Types: []
+  - Name: exeggutor
+    Id: 103
+    Types: []
+  - Name: cubone
+    Id: 104
+    Types: []
+  - Name: marowak
+    Id: 105
+    Types: []
+  - Name: hitmonlee
+    Id: 106
+    Types: []
+  - Name: hitmonchan
+    Id: 107
+    Types: []
+  - Name: lickitung
+    Id: 108
+    Types: []
+  - Name: koffing
+    Id: 109
+    Types: []
+  - Name: weezing
+    Id: 110
+    Types: []
+  - Name: rhyhorn
+    Id: 111
+    Types: []
+  - Name: rhydon
+    Id: 112
+    Types: []
+  - Name: chansey
+    Id: 113
+    Types: []
+  - Name: tangela
+    Id: 114
+    Types: []
+  - Name: kangaskhan
+    Id: 115
+    Types: []
+  - Name: horsea
+    Id: 116
+    Types: []
+  - Name: seadra
+    Id: 117
+    Types: []
+  - Name: goldeen
+    Id: 118
+    Types: []
+  - Name: seaking
+    Id: 119
+    Types: []
+  - Name: staryu
+    Id: 120
+    Types: []
+  - Name: starmie
+    Id: 121
+    Types: []
+  - Name: mr-mime
+    Id: 122
+    Types: []
+  - Name: scyther
+    Id: 123
+    Types: []
+  - Name: jynx
+    Id: 124
+    Types: []
+  - Name: electabuzz
+    Id: 125
+    Types: []
+  - Name: magmar
+    Id: 126
+    Types: []
+  - Name: pinsir
+    Id: 127
+    Types: []
+  - Name: tauros
+    Id: 128
+    Types: []
+  - Name: magikarp
+    Id: 129
+    Types: []
+  - Name: gyarados
+    Id: 130
+    Types: []
+  - Name: lapras
+    Id: 131
+    Types: []
+  - Name: ditto
+    Id: 132
+    Types: []
+  - Name: eevee
+    Id: 133
+    Types: []
+  - Name: vaporeon
+    Id: 134
+    Types: []
+  - Name: jolteon
+    Id: 135
+    Types: []
+  - Name: flareon
+    Id: 136
+    Types: []
+  - Name: porygon
+    Id: 137
+    Types: []
+  - Name: omanyte
+    Id: 138
+    Types: []
+  - Name: omastar
+    Id: 139
+    Types: []
+  - Name: kabuto
+    Id: 140
+    Types: []
+  - Name: kabutops
+    Id: 141
+    Types: []
+  - Name: aerodactyl
+    Id: 142
+    Types: []
+  - Name: snorlax
+    Id: 143
+    Types: []
+  - Name: articuno
+    Id: 144
+    Types: []
+  - Name: zapdos
+    Id: 145
+    Types: []
+  - Name: moltres
+    Id: 146
+    Types: []
+  - Name: dratini
+    Id: 147
+    Types: []
+  - Name: dragonair
+    Id: 148
+    Types: []
+  - Name: dragonite
+    Id: 149
+    Types: []
+  - Name: mewtwo
+    Id: 150
+    Types: []
+  - Name: mew
+    Id: 151
+    Types: []
+  - Name: chikorita
+    Id: 152
+    Types: []
+  - Name: bayleef
+    Id: 153
+    Types: []
+  - Name: meganium
+    Id: 154
+    Types: []
+  - Name: cyndaquil
+    Id: 155
+    Types: []
+  - Name: quilava
+    Id: 156
+    Types: []
+  - Name: typhlosion
+    Id: 157
+    Types: []
+  - Name: totodile
+    Id: 158
+    Types: []
+  - Name: croconaw
+    Id: 159
+    Types: []
+  - Name: feraligatr
+    Id: 160
+    Types: []
+  - Name: sentret
+    Id: 161
+    Types: []
+  - Name: furret
+    Id: 162
+    Types: []
+  - Name: hoothoot
+    Id: 163
+    Types: []
+  - Name: noctowl
+    Id: 164
+    Types: []
+  - Name: ledyba
+    Id: 165
+    Types: []
+  - Name: ledian
+    Id: 166
+    Types: []
+  - Name: spinarak
+    Id: 167
+    Types: []
+  - Name: ariados
+    Id: 168
+    Types: []
+  - Name: crobat
+    Id: 169
+    Types: []
+  - Name: chinchou
+    Id: 170
+    Types: []
+  - Name: lanturn
+    Id: 171
+    Types: []
+  - Name: pichu
+    Id: 172
+    Types: []
+  - Name: cleffa
+    Id: 173
+    Types: []
+  - Name: igglybuff
+    Id: 174
+    Types: []
+  - Name: togepi
+    Id: 175
+    Types: []
+  - Name: togetic
+    Id: 176
+    Types: []
+  - Name: natu
+    Id: 177
+    Types: []
+  - Name: xatu
+    Id: 178
+    Types: []
+  - Name: mareep
+    Id: 179
+    Types: []
+  - Name: flaaffy
+    Id: 180
+    Types: []
+  - Name: ampharos
+    Id: 181
+    Types: []
+  - Name: bellossom
+    Id: 182
+    Types: []
+  - Name: marill
+    Id: 183
+    Types: []
+  - Name: azumarill
+    Id: 184
+    Types: []
+  - Name: sudowoodo
+    Id: 185
+    Types: []
+  - Name: politoed
+    Id: 186
+    Types: []
+  - Name: hoppip
+    Id: 187
+    Types: []
+  - Name: skiploom
+    Id: 188
+    Types: []
+  - Name: jumpluff
+    Id: 189
+    Types: []
+  - Name: aipom
+    Id: 190
+    Types: []
+  - Name: sunkern
+    Id: 191
+    Types: []
+  - Name: sunflora
+    Id: 192
+    Types: []
+  - Name: yanma
+    Id: 193
+    Types: []
+  - Name: wooper
+    Id: 194
+    Types: []
+  - Name: quagsire
+    Id: 195
+    Types: []
+  - Name: espeon
+    Id: 196
+    Types: []
+  - Name: umbreon
+    Id: 197
+    Types: []
+  - Name: murkrow
+    Id: 198
+    Types: []
+  - Name: slowking
+    Id: 199
+    Types: []
+  - Name: misdreavus
+    Id: 200
+    Types: []
+  - Name: unown
+    Id: 201
+    Types: []
+  - Name: wobbuffet
+    Id: 202
+    Types: []
+  - Name: girafarig
+    Id: 203
+    Types: []
+  - Name: pineco
+    Id: 204
+    Types: []
+  - Name: forretress
+    Id: 205
+    Types: []
+  - Name: dunsparce
+    Id: 206
+    Types: []
+  - Name: gligar
+    Id: 207
+    Types: []
+  - Name: steelix
+    Id: 208
+    Types: []
+  - Name: snubbull
+    Id: 209
+    Types: []
+  - Name: granbull
+    Id: 210
+    Types: []
+  - Name: qwilfish
+    Id: 211
+    Types: []
+  - Name: scizor
+    Id: 212
+    Types: []
+  - Name: shuckle
+    Id: 213
+    Types: []
+  - Name: heracross
+    Id: 214
+    Types: []
+  - Name: sneasel
+    Id: 215
+    Types: []
+  - Name: teddiursa
+    Id: 216
+    Types: []
+  - Name: ursaring
+    Id: 217
+    Types: []
+  - Name: slugma
+    Id: 218
+    Types: []
+  - Name: magcargo
+    Id: 219
+    Types: []
+  - Name: swinub
+    Id: 220
+    Types: []
+  - Name: piloswine
+    Id: 221
+    Types: []
+  - Name: corsola
+    Id: 222
+    Types: []
+  - Name: remoraid
+    Id: 223
+    Types: []
+  - Name: octillery
+    Id: 224
+    Types: []
+  - Name: delibird
+    Id: 225
+    Types: []
+  - Name: mantine
+    Id: 226
+    Types: []
+  - Name: skarmory
+    Id: 227
+    Types: []
+  - Name: houndour
+    Id: 228
+    Types: []
+  - Name: houndoom
+    Id: 229
+    Types: []
+  - Name: kingdra
+    Id: 230
+    Types: []
+  - Name: phanpy
+    Id: 231
+    Types: []
+  - Name: donphan
+    Id: 232
+    Types: []
+  - Name: porygon2
+    Id: 233
+    Types: []
+  - Name: stantler
+    Id: 234
+    Types: []
+  - Name: smeargle
+    Id: 235
+    Types: []
+  - Name: tyrogue
+    Id: 236
+    Types: []
+  - Name: hitmontop
+    Id: 237
+    Types: []
+  - Name: smoochum
+    Id: 238
+    Types: []
+  - Name: elekid
+    Id: 239
+    Types: []
+  - Name: magby
+    Id: 240
+    Types: []
+  - Name: miltank
+    Id: 241
+    Types: []
+  - Name: blissey
+    Id: 242
+    Types: []
+  - Name: raikou
+    Id: 243
+    Types: []
+  - Name: entei
+    Id: 244
+    Types: []
+  - Name: suicune
+    Id: 245
+    Types: []
+  - Name: larvitar
+    Id: 246
+    Types: []
+  - Name: pupitar
+    Id: 247
+    Types: []
+  - Name: tyranitar
+    Id: 248
+    Types: []
+  - Name: lugia
+    Id: 249
+    Types: []
+  - Name: ho-oh
+    Id: 250
+    Types: []
+  - Name: celebi
+    Id: 251
+    Types: []
+  - Name: treecko
+    Id: 252
+    Types: []
+  - Name: grovyle
+    Id: 253
+    Types: []
+  - Name: sceptile
+    Id: 254
+    Types: []
+  - Name: torchic
+    Id: 255
+    Types: []
+  - Name: combusken
+    Id: 256
+    Types: []
+  - Name: blaziken
+    Id: 257
+    Types: []
+  - Name: mudkip
+    Id: 258
+    Types: []
+  - Name: marshtomp
+    Id: 259
+    Types: []
+  - Name: swampert
+    Id: 260
+    Types: []
+  - Name: poochyena
+    Id: 261
+    Types: []
+  - Name: mightyena
+    Id: 262
+    Types: []
+  - Name: zigzagoon
+    Id: 263
+    Types: []
+  - Name: linoone
+    Id: 264
+    Types: []
+  - Name: wurmple
+    Id: 265
+    Types: []
+  - Name: silcoon
+    Id: 266
+    Types: []
+  - Name: beautifly
+    Id: 267
+    Types: []
+  - Name: cascoon
+    Id: 268
+    Types: []
+  - Name: dustox
+    Id: 269
+    Types: []
+  - Name: lotad
+    Id: 270
+    Types: []
+  - Name: lombre
+    Id: 271
+    Types: []
+  - Name: ludicolo
+    Id: 272
+    Types: []
+  - Name: seedot
+    Id: 273
+    Types: []
+  - Name: nuzleaf
+    Id: 274
+    Types: []
+  - Name: shiftry
+    Id: 275
+    Types: []
+  - Name: taillow
+    Id: 276
+    Types: []
+  - Name: swellow
+    Id: 277
+    Types: []
+  - Name: wingull
+    Id: 278
+    Types: []
+  - Name: pelipper
+    Id: 279
+    Types: []
+  - Name: ralts
+    Id: 280
+    Types: []
+  - Name: kirlia
+    Id: 281
+    Types: []
+  - Name: gardevoir
+    Id: 282
+    Types: []
+  - Name: surskit
+    Id: 283
+    Types: []
+  - Name: masquerain
+    Id: 284
+    Types: []
+  - Name: shroomish
+    Id: 285
+    Types: []
+  - Name: breloom
+    Id: 286
+    Types: []
+  - Name: slakoth
+    Id: 287
+    Types: []
+  - Name: vigoroth
+    Id: 288
+    Types: []
+  - Name: slaking
+    Id: 289
+    Types: []
+  - Name: nincada
+    Id: 290
+    Types: []
+  - Name: ninjask
+    Id: 291
+    Types: []
+  - Name: shedinja
+    Id: 292
+    Types: []
+  - Name: whismur
+    Id: 293
+    Types: []
+  - Name: loudred
+    Id: 294
+    Types: []
+  - Name: exploud
+    Id: 295
+    Types: []
+  - Name: makuhita
+    Id: 296
+    Types: []
+  - Name: hariyama
+    Id: 297
+    Types: []
+  - Name: azurill
+    Id: 298
+    Types: []
+  - Name: nosepass
+    Id: 299
+    Types: []
+  - Name: skitty
+    Id: 300
+    Types: []
+  - Name: delcatty
+    Id: 301
+    Types: []
+  - Name: sableye
+    Id: 302
+    Types: []
+  - Name: mawile
+    Id: 303
+    Types: []
+  - Name: aron
+    Id: 304
+    Types: []
+  - Name: lairon
+    Id: 305
+    Types: []
+  - Name: aggron
+    Id: 306
+    Types: []
+  - Name: meditite
+    Id: 307
+    Types: []
+  - Name: medicham
+    Id: 308
+    Types: []
+  - Name: electrike
+    Id: 309
+    Types: []
+  - Name: manectric
+    Id: 310
+    Types: []
+  - Name: plusle
+    Id: 311
+    Types: []
+  - Name: minun
+    Id: 312
+    Types: []
+  - Name: volbeat
+    Id: 313
+    Types: []
+  - Name: illumise
+    Id: 314
+    Types: []
+  - Name: roselia
+    Id: 315
+    Types: []
+  - Name: gulpin
+    Id: 316
+    Types: []
+  - Name: swalot
+    Id: 317
+    Types: []
+  - Name: carvanha
+    Id: 318
+    Types: []
+  - Name: sharpedo
+    Id: 319
+    Types: []
+  - Name: wailmer
+    Id: 320
+    Types: []
+  - Name: wailord
+    Id: 321
+    Types: []
+  - Name: numel
+    Id: 322
+    Types: []
+  - Name: camerupt
+    Id: 323
+    Types: []
+  - Name: torkoal
+    Id: 324
+    Types: []
+  - Name: spoink
+    Id: 325
+    Types: []
+  - Name: grumpig
+    Id: 326
+    Types: []
+  - Name: spinda
+    Id: 327
+    Types: []
+  - Name: trapinch
+    Id: 328
+    Types: []
+  - Name: vibrava
+    Id: 329
+    Types: []
+  - Name: flygon
+    Id: 330
+    Types: []
+  - Name: cacnea
+    Id: 331
+    Types: []
+  - Name: cacturne
+    Id: 332
+    Types: []
+  - Name: swablu
+    Id: 333
+    Types: []
+  - Name: altaria
+    Id: 334
+    Types: []
+  - Name: zangoose
+    Id: 335
+    Types: []
+  - Name: seviper
+    Id: 336
+    Types: []
+  - Name: lunatone
+    Id: 337
+    Types: []
+  - Name: solrock
+    Id: 338
+    Types: []
+  - Name: barboach
+    Id: 339
+    Types: []
+  - Name: whiscash
+    Id: 340
+    Types: []
+  - Name: corphish
+    Id: 341
+    Types: []
+  - Name: crawdaunt
+    Id: 342
+    Types: []
+  - Name: baltoy
+    Id: 343
+    Types: []
+  - Name: claydol
+    Id: 344
+    Types: []
+  - Name: lileep
+    Id: 345
+    Types: []
+  - Name: cradily
+    Id: 346
+    Types: []
+  - Name: anorith
+    Id: 347
+    Types: []
+  - Name: armaldo
+    Id: 348
+    Types: []
+  - Name: feebas
+    Id: 349
+    Types: []
+  - Name: milotic
+    Id: 350
+    Types: []
+  - Name: castform
+    Id: 351
+    Types: []
+  - Name: kecleon
+    Id: 352
+    Types: []
+  - Name: shuppet
+    Id: 353
+    Types: []
+  - Name: banette
+    Id: 354
+    Types: []
+  - Name: duskull
+    Id: 355
+    Types: []
+  - Name: dusclops
+    Id: 356
+    Types: []
+  - Name: tropius
+    Id: 357
+    Types: []
+  - Name: chimecho
+    Id: 358
+    Types: []
+  - Name: absol
+    Id: 359
+    Types: []
+  - Name: wynaut
+    Id: 360
+    Types: []
+  - Name: snorunt
+    Id: 361
+    Types: []
+  - Name: glalie
+    Id: 362
+    Types: []
+  - Name: spheal
+    Id: 363
+    Types: []
+  - Name: sealeo
+    Id: 364
+    Types: []
+  - Name: walrein
+    Id: 365
+    Types: []
+  - Name: clamperl
+    Id: 366
+    Types: []
+  - Name: huntail
+    Id: 367
+    Types: []
+  - Name: gorebyss
+    Id: 368
+    Types: []
+  - Name: relicanth
+    Id: 369
+    Types: []
+  - Name: luvdisc
+    Id: 370
+    Types: []
+  - Name: bagon
+    Id: 371
+    Types: []
+  - Name: shelgon
+    Id: 372
+    Types: []
+  - Name: salamence
+    Id: 373
+    Types: []
+  - Name: beldum
+    Id: 374
+    Types: []
+  - Name: metang
+    Id: 375
+    Types: []
+  - Name: metagross
+    Id: 376
+    Types: []
+  - Name: regirock
+    Id: 377
+    Types: []
+  - Name: regice
+    Id: 378
+    Types: []
+  - Name: registeel
+    Id: 379
+    Types: []
+  - Name: latias
+    Id: 380
+    Types: []
+  - Name: latios
+    Id: 381
+    Types: []
+  - Name: kyogre
+    Id: 382
+    Types: []
+  - Name: groudon
+    Id: 383
+    Types: []
+  - Name: rayquaza
+    Id: 384
+    Types: []
+  - Name: jirachi
+    Id: 385
+    Types: []
+  - Name: deoxys-normal
+    Id: 386
+    Types: []
+  - Name: turtwig
+    Id: 387
+    Types: []
+  - Name: grotle
+    Id: 388
+    Types: []
+  - Name: torterra
+    Id: 389
+    Types: []
+  - Name: chimchar
+    Id: 390
+    Types: []
+  - Name: monferno
+    Id: 391
+    Types: []
+  - Name: infernape
+    Id: 392
+    Types: []
+  - Name: piplup
+    Id: 393
+    Types: []
+  - Name: prinplup
+    Id: 394
+    Types: []
+  - Name: empoleon
+    Id: 395
+    Types: []
+  - Name: starly
+    Id: 396
+    Types: []
+  - Name: staravia
+    Id: 397
+    Types: []
+  - Name: staraptor
+    Id: 398
+    Types: []
+  - Name: bidoof
+    Id: 399
+    Types: []
+  - Name: bibarel
+    Id: 400
+    Types: []
+  - Name: kricketot
+    Id: 401
+    Types: []
+  - Name: kricketune
+    Id: 402
+    Types: []
+  - Name: shinx
+    Id: 403
+    Types: []
+  - Name: luxio
+    Id: 404
+    Types: []
+  - Name: luxray
+    Id: 405
+    Types: []
+  - Name: budew
+    Id: 406
+    Types: []
+  - Name: roserade
+    Id: 407
+    Types: []
+  - Name: cranidos
+    Id: 408
+    Types: []
+  - Name: rampardos
+    Id: 409
+    Types: []
+  - Name: shieldon
+    Id: 410
+    Types: []
+  - Name: bastiodon
+    Id: 411
+    Types: []
+  - Name: burmy
+    Id: 412
+    Types: []
+  - Name: wormadam-plant
+    Id: 413
+    Types: []
+  - Name: mothim
+    Id: 414
+    Types: []
+  - Name: combee
+    Id: 415
+    Types: []
+  - Name: vespiquen
+    Id: 416
+    Types: []
+  - Name: pachirisu
+    Id: 417
+    Types: []
+  - Name: buizel
+    Id: 418
+    Types: []
+  - Name: floatzel
+    Id: 419
+    Types: []
+  - Name: cherubi
+    Id: 420
+    Types: []
+  - Name: cherrim
+    Id: 421
+    Types: []
+  - Name: shellos
+    Id: 422
+    Types: []
+  - Name: gastrodon
+    Id: 423
+    Types: []
+  - Name: ambipom
+    Id: 424
+    Types: []
+  - Name: drifloon
+    Id: 425
+    Types: []
+  - Name: drifblim
+    Id: 426
+    Types: []
+  - Name: buneary
+    Id: 427
+    Types: []
+  - Name: lopunny
+    Id: 428
+    Types: []
+  - Name: mismagius
+    Id: 429
+    Types: []
+  - Name: honchkrow
+    Id: 430
+    Types: []
+  - Name: glameow
+    Id: 431
+    Types: []
+  - Name: purugly
+    Id: 432
+    Types: []
+  - Name: chingling
+    Id: 433
+    Types: []
+  - Name: stunky
+    Id: 434
+    Types: []
+  - Name: skuntank
+    Id: 435
+    Types: []
+  - Name: bronzor
+    Id: 436
+    Types: []
+  - Name: bronzong
+    Id: 437
+    Types: []
+  - Name: bonsly
+    Id: 438
+    Types: []
+  - Name: mime-jr
+    Id: 439
+    Types: []
+  - Name: happiny
+    Id: 440
+    Types: []
+  - Name: chatot
+    Id: 441
+    Types: []
+  - Name: spiritomb
+    Id: 442
+    Types: []
+  - Name: gible
+    Id: 443
+    Types: []
+  - Name: gabite
+    Id: 444
+    Types: []
+  - Name: garchomp
+    Id: 445
+    Types: []
+  - Name: munchlax
+    Id: 446
+    Types: []
+  - Name: riolu
+    Id: 447
+    Types: []
+  - Name: lucario
+    Id: 448
+    Types: []
+  - Name: hippopotas
+    Id: 449
+    Types: []
+  - Name: hippowdon
+    Id: 450
+    Types: []
+  - Name: skorupi
+    Id: 451
+    Types: []
+  - Name: drapion
+    Id: 452
+    Types: []
+  - Name: croagunk
+    Id: 453
+    Types: []
+  - Name: toxicroak
+    Id: 454
+    Types: []
+  - Name: carnivine
+    Id: 455
+    Types: []
+  - Name: finneon
+    Id: 456
+    Types: []
+  - Name: lumineon
+    Id: 457
+    Types: []
+  - Name: mantyke
+    Id: 458
+    Types: []
+  - Name: snover
+    Id: 459
+    Types: []
+  - Name: abomasnow
+    Id: 460
+    Types: []
+  - Name: weavile
+    Id: 461
+    Types: []
+  - Name: magnezone
+    Id: 462
+    Types: []
+  - Name: lickilicky
+    Id: 463
+    Types: []
+  - Name: rhyperior
+    Id: 464
+    Types: []
+  - Name: tangrowth
+    Id: 465
+    Types: []
+  - Name: electivire
+    Id: 466
+    Types: []
+  - Name: magmortar
+    Id: 467
+    Types: []
+  - Name: togekiss
+    Id: 468
+    Types: []
+  - Name: yanmega
+    Id: 469
+    Types: []
+  - Name: leafeon
+    Id: 470
+    Types: []
+  - Name: glaceon
+    Id: 471
+    Types: []
+  - Name: gliscor
+    Id: 472
+    Types: []
+  - Name: mamoswine
+    Id: 473
+    Types: []
+  - Name: porygon-z
+    Id: 474
+    Types: []
+  - Name: gallade
+    Id: 475
+    Types: []
+  - Name: probopass
+    Id: 476
+    Types: []
+  - Name: dusknoir
+    Id: 477
+    Types: []
+  - Name: froslass
+    Id: 478
+    Types: []
+  - Name: rotom
+    Id: 479
+    Types: []
+  - Name: uxie
+    Id: 480
+    Types: []
+  - Name: mesprit
+    Id: 481
+    Types: []
+  - Name: azelf
+    Id: 482
+    Types: []
+  - Name: dialga
+    Id: 483
+    Types: []
+  - Name: palkia
+    Id: 484
+    Types: []
+  - Name: heatran
+    Id: 485
+    Types: []
+  - Name: regigigas
+    Id: 486
+    Types: []
+  - Name: giratina-altered
+    Id: 487
+    Types: []
+  - Name: cresselia
+    Id: 488
+    Types: []
+  - Name: phione
+    Id: 489
+    Types: []
+  - Name: manaphy
+    Id: 490
+    Types: []
+  - Name: darkrai
+    Id: 491
+    Types: []
+  - Name: shaymin-land
+    Id: 492
+    Types: []
+  - Name: arceus
+    Id: 493
+    Types: []
+  - Name: victini
+    Id: 494
+    Types: []
+  - Name: snivy
+    Id: 495
+    Types: []
+  - Name: servine
+    Id: 496
+    Types: []
+  - Name: serperior
+    Id: 497
+    Types: []
+  - Name: tepig
+    Id: 498
+    Types: []
+  - Name: pignite
+    Id: 499
+    Types: []
+  - Name: emboar
+    Id: 500
+    Types: []
+  - Name: oshawott
+    Id: 501
+    Types: []
+  - Name: dewott
+    Id: 502
+    Types: []
+  - Name: samurott
+    Id: 503
+    Types: []
+  - Name: patrat
+    Id: 504
+    Types: []
+  - Name: watchog
+    Id: 505
+    Types: []
+  - Name: lillipup
+    Id: 506
+    Types: []
+  - Name: herdier
+    Id: 507
+    Types: []
+  - Name: stoutland
+    Id: 508
+    Types: []
+  - Name: purrloin
+    Id: 509
+    Types: []
+  - Name: liepard
+    Id: 510
+    Types: []
+  - Name: pansage
+    Id: 511
+    Types: []
+  - Name: simisage
+    Id: 512
+    Types: []
+  - Name: pansear
+    Id: 513
+    Types: []
+  - Name: simisear
+    Id: 514
+    Types: []
+  - Name: panpour
+    Id: 515
+    Types: []
+  - Name: simipour
+    Id: 516
+    Types: []
+  - Name: munna
+    Id: 517
+    Types: []
+  - Name: musharna
+    Id: 518
+    Types: []
+  - Name: pidove
+    Id: 519
+    Types: []
+  - Name: tranquill
+    Id: 520
+    Types: []
+  - Name: unfezant
+    Id: 521
+    Types: []
+  - Name: blitzle
+    Id: 522
+    Types: []
+  - Name: zebstrika
+    Id: 523
+    Types: []
+  - Name: roggenrola
+    Id: 524
+    Types: []
+  - Name: boldore
+    Id: 525
+    Types: []
+  - Name: gigalith
+    Id: 526
+    Types: []
+  - Name: woobat
+    Id: 527
+    Types: []
+  - Name: swoobat
+    Id: 528
+    Types: []
+  - Name: drilbur
+    Id: 529
+    Types: []
+  - Name: excadrill
+    Id: 530
+    Types: []
+  - Name: audino
+    Id: 531
+    Types: []
+  - Name: timburr
+    Id: 532
+    Types: []
+  - Name: gurdurr
+    Id: 533
+    Types: []
+  - Name: conkeldurr
+    Id: 534
+    Types: []
+  - Name: tympole
+    Id: 535
+    Types: []
+  - Name: palpitoad
+    Id: 536
+    Types: []
+  - Name: seismitoad
+    Id: 537
+    Types: []
+  - Name: throh
+    Id: 538
+    Types: []
+  - Name: sawk
+    Id: 539
+    Types: []
+  - Name: sewaddle
+    Id: 540
+    Types: []
+  - Name: swadloon
+    Id: 541
+    Types: []
+  - Name: leavanny
+    Id: 542
+    Types: []
+  - Name: venipede
+    Id: 543
+    Types: []
+  - Name: whirlipede
+    Id: 544
+    Types: []
+  - Name: scolipede
+    Id: 545
+    Types: []
+  - Name: cottonee
+    Id: 546
+    Types: []
+  - Name: whimsicott
+    Id: 547
+    Types: []
+  - Name: petilil
+    Id: 548
+    Types: []
+  - Name: lilligant
+    Id: 549
+    Types: []
+  - Name: basculin-red-striped
+    Id: 550
+    Types: []
+  - Name: sandile
+    Id: 551
+    Types: []
+  - Name: krokorok
+    Id: 552
+    Types: []
+  - Name: krookodile
+    Id: 553
+    Types: []
+  - Name: darumaka
+    Id: 554
+    Types: []
+  - Name: darmanitan-standard
+    Id: 555
+    Types: []
+  - Name: maractus
+    Id: 556
+    Types: []
+  - Name: dwebble
+    Id: 557
+    Types: []
+  - Name: crustle
+    Id: 558
+    Types: []
+  - Name: scraggy
+    Id: 559
+    Types: []
+  - Name: scrafty
+    Id: 560
+    Types: []
+  - Name: sigilyph
+    Id: 561
+    Types: []
+  - Name: yamask
+    Id: 562
+    Types: []
+  - Name: cofagrigus
+    Id: 563
+    Types: []
+  - Name: tirtouga
+    Id: 564
+    Types: []
+  - Name: carracosta
+    Id: 565
+    Types: []
+  - Name: archen
+    Id: 566
+    Types: []
+  - Name: archeops
+    Id: 567
+    Types: []
+  - Name: trubbish
+    Id: 568
+    Types: []
+  - Name: garbodor
+    Id: 569
+    Types: []
+  - Name: zorua
+    Id: 570
+    Types: []
+  - Name: zoroark
+    Id: 571
+    Types: []
+  - Name: minccino
+    Id: 572
+    Types: []
+  - Name: cinccino
+    Id: 573
+    Types: []
+  - Name: gothita
+    Id: 574
+    Types: []
+  - Name: gothorita
+    Id: 575
+    Types: []
+  - Name: gothitelle
+    Id: 576
+    Types: []
+  - Name: solosis
+    Id: 577
+    Types: []
+  - Name: duosion
+    Id: 578
+    Types: []
+  - Name: reuniclus
+    Id: 579
+    Types: []
+  - Name: ducklett
+    Id: 580
+    Types: []
+  - Name: swanna
+    Id: 581
+    Types: []
+  - Name: vanillite
+    Id: 582
+    Types: []
+  - Name: vanillish
+    Id: 583
+    Types: []
+  - Name: vanilluxe
+    Id: 584
+    Types: []
+  - Name: deerling
+    Id: 585
+    Types: []
+  - Name: sawsbuck
+    Id: 586
+    Types: []
+  - Name: emolga
+    Id: 587
+    Types: []
+  - Name: karrablast
+    Id: 588
+    Types: []
+  - Name: escavalier
+    Id: 589
+    Types: []
+  - Name: foongus
+    Id: 590
+    Types: []
+  - Name: amoonguss
+    Id: 591
+    Types: []
+  - Name: frillish
+    Id: 592
+    Types: []
+  - Name: jellicent
+    Id: 593
+    Types: []
+  - Name: alomomola
+    Id: 594
+    Types: []
+  - Name: joltik
+    Id: 595
+    Types: []
+  - Name: galvantula
+    Id: 596
+    Types: []
+  - Name: ferroseed
+    Id: 597
+    Types: []
+  - Name: ferrothorn
+    Id: 598
+    Types: []
+  - Name: klink
+    Id: 599
+    Types: []
+  - Name: klang
+    Id: 600
+    Types: []
+  - Name: klinklang
+    Id: 601
+    Types: []
+  - Name: tynamo
+    Id: 602
+    Types: []
+  - Name: eelektrik
+    Id: 603
+    Types: []
+  - Name: eelektross
+    Id: 604
+    Types: []
+  - Name: elgyem
+    Id: 605
+    Types: []
+  - Name: beheeyem
+    Id: 606
+    Types: []
+  - Name: litwick
+    Id: 607
+    Types: []
+  - Name: lampent
+    Id: 608
+    Types: []
+  - Name: chandelure
+    Id: 609
+    Types: []
+  - Name: axew
+    Id: 610
+    Types: []
+  - Name: fraxure
+    Id: 611
+    Types: []
+  - Name: haxorus
+    Id: 612
+    Types: []
+  - Name: cubchoo
+    Id: 613
+    Types: []
+  - Name: beartic
+    Id: 614
+    Types: []
+  - Name: cryogonal
+    Id: 615
+    Types: []
+  - Name: shelmet
+    Id: 616
+    Types: []
+  - Name: accelgor
+    Id: 617
+    Types: []
+  - Name: stunfisk
+    Id: 618
+    Types: []
+  - Name: mienfoo
+    Id: 619
+    Types: []
+  - Name: mienshao
+    Id: 620
+    Types: []
+  - Name: druddigon
+    Id: 621
+    Types: []
+  - Name: golett
+    Id: 622
+    Types: []
+  - Name: golurk
+    Id: 623
+    Types: []
+  - Name: pawniard
+    Id: 624
+    Types: []
+  - Name: bisharp
+    Id: 625
+    Types: []
+  - Name: bouffalant
+    Id: 626
+    Types: []
+  - Name: rufflet
+    Id: 627
+    Types: []
+  - Name: braviary
+    Id: 628
+    Types: []
+  - Name: vullaby
+    Id: 629
+    Types: []
+  - Name: mandibuzz
+    Id: 630
+    Types: []
+  - Name: heatmor
+    Id: 631
+    Types: []
+  - Name: durant
+    Id: 632
+    Types: []
+  - Name: deino
+    Id: 633
+    Types: []
+  - Name: zweilous
+    Id: 634
+    Types: []
+  - Name: hydreigon
+    Id: 635
+    Types: []
+  - Name: larvesta
+    Id: 636
+    Types: []
+  - Name: volcarona
+    Id: 637
+    Types: []
+  - Name: cobalion
+    Id: 638
+    Types: []
+  - Name: terrakion
+    Id: 639
+    Types: []
+  - Name: virizion
+    Id: 640
+    Types: []
+  - Name: tornadus-incarnate
+    Id: 641
+    Types: []
+  - Name: thundurus-incarnate
+    Id: 642
+    Types: []
+  - Name: reshiram
+    Id: 643
+    Types: []
+  - Name: zekrom
+    Id: 644
+    Types: []
+  - Name: landorus-incarnate
+    Id: 645
+    Types: []
+  - Name: kyurem
+    Id: 646
+    Types: []
+  - Name: keldeo-ordinary
+    Id: 647
+    Types: []
+  - Name: meloetta-aria
+    Id: 648
+    Types: []
+  - Name: genesect
+    Id: 649
+    Types: []
+  - Name: chespin
+    Id: 650
+    Types: []
+  - Name: quilladin
+    Id: 651
+    Types: []
+  - Name: chesnaught
+    Id: 652
+    Types: []
+  - Name: fennekin
+    Id: 653
+    Types: []
+  - Name: braixen
+    Id: 654
+    Types: []
+  - Name: delphox
+    Id: 655
+    Types: []
+  - Name: froakie
+    Id: 656
+    Types: []
+  - Name: frogadier
+    Id: 657
+    Types: []
+  - Name: greninja
+    Id: 658
+    Types: []
+  - Name: bunnelby
+    Id: 659
+    Types: []
+  - Name: diggersby
+    Id: 660
+    Types: []
+  - Name: fletchling
+    Id: 661
+    Types: []
+  - Name: fletchinder
+    Id: 662
+    Types: []
+  - Name: talonflame
+    Id: 663
+    Types: []
+  - Name: scatterbug
+    Id: 664
+    Types: []
+  - Name: spewpa
+    Id: 665
+    Types: []
+  - Name: vivillon
+    Id: 666
+    Types: []
+  - Name: litleo
+    Id: 667
+    Types: []
+  - Name: pyroar
+    Id: 668
+    Types: []
+  - Name: flabebe
+    Id: 669
+    Types: []
+  - Name: floette
+    Id: 670
+    Types: []
+  - Name: florges
+    Id: 671
+    Types: []
+  - Name: skiddo
+    Id: 672
+    Types: []
+  - Name: gogoat
+    Id: 673
+    Types: []
+  - Name: pancham
+    Id: 674
+    Types: []
+  - Name: pangoro
+    Id: 675
+    Types: []
+  - Name: furfrou
+    Id: 676
+    Types: []
+  - Name: espurr
+    Id: 677
+    Types: []
+  - Name: meowstic-male
+    Id: 678
+    Types: []
+  - Name: honedge
+    Id: 679
+    Types: []
+  - Name: doublade
+    Id: 680
+    Types: []
+  - Name: aegislash-shield
+    Id: 681
+    Types: []
+  - Name: spritzee
+    Id: 682
+    Types: []
+  - Name: aromatisse
+    Id: 683
+    Types: []
+  - Name: swirlix
+    Id: 684
+    Types: []
+  - Name: slurpuff
+    Id: 685
+    Types: []
+  - Name: inkay
+    Id: 686
+    Types: []
+  - Name: malamar
+    Id: 687
+    Types: []
+  - Name: binacle
+    Id: 688
+    Types: []
+  - Name: barbaracle
+    Id: 689
+    Types: []
+  - Name: skrelp
+    Id: 690
+    Types: []
+  - Name: dragalge
+    Id: 691
+    Types: []
+  - Name: clauncher
+    Id: 692
+    Types: []
+  - Name: clawitzer
+    Id: 693
+    Types: []
+  - Name: helioptile
+    Id: 694
+    Types: []
+  - Name: heliolisk
+    Id: 695
+    Types: []
+  - Name: tyrunt
+    Id: 696
+    Types: []
+  - Name: tyrantrum
+    Id: 697
+    Types: []
+  - Name: amaura
+    Id: 698
+    Types: []
+  - Name: aurorus
+    Id: 699
+    Types: []
+  - Name: sylveon
+    Id: 700
+    Types: []
+  - Name: hawlucha
+    Id: 701
+    Types: []
+  - Name: dedenne
+    Id: 702
+    Types: []
+  - Name: carbink
+    Id: 703
+    Types: []
+  - Name: goomy
+    Id: 704
+    Types: []
+  - Name: sliggoo
+    Id: 705
+    Types: []
+  - Name: goodra
+    Id: 706
+    Types: []
+  - Name: klefki
+    Id: 707
+    Types: []
+  - Name: phantump
+    Id: 708
+    Types: []
+  - Name: trevenant
+    Id: 709
+    Types: []
+  - Name: pumpkaboo-average
+    Id: 710
+    Types: []
+  - Name: gourgeist-average
+    Id: 711
+    Types: []
+  - Name: bergmite
+    Id: 712
+    Types: []
+  - Name: avalugg
+    Id: 713
+    Types: []
+  - Name: noibat
+    Id: 714
+    Types: []
+  - Name: noivern
+    Id: 715
+    Types: []
+  - Name: xerneas
+    Id: 716
+    Types: []
+  - Name: yveltal
+    Id: 717
+    Types: []
+  - Name: zygarde-50
+    Id: 718
+    Types: []
+  - Name: diancie
+    Id: 719
+    Types: []
+  - Name: hoopa
+    Id: 720
+    Types: []
+  - Name: volcanion
+    Id: 721
+    Types: []
+  - Name: rowlet
+    Id: 722
+    Types: []
+  - Name: dartrix
+    Id: 723
+    Types: []
+  - Name: decidueye
+    Id: 724
+    Types: []
+  - Name: litten
+    Id: 725
+    Types: []
+  - Name: torracat
+    Id: 726
+    Types: []
+  - Name: incineroar
+    Id: 727
+    Types: []
+  - Name: popplio
+    Id: 728
+    Types: []
+  - Name: brionne
+    Id: 729
+    Types: []
+  - Name: primarina
+    Id: 730
+    Types: []
+  - Name: pikipek
+    Id: 731
+    Types: []
+  - Name: trumbeak
+    Id: 732
+    Types: []
+  - Name: toucannon
+    Id: 733
+    Types: []
+  - Name: yungoos
+    Id: 734
+    Types: []
+  - Name: gumshoos
+    Id: 735
+    Types: []
+  - Name: grubbin
+    Id: 736
+    Types: []
+  - Name: charjabug
+    Id: 737
+    Types: []
+  - Name: vikavolt
+    Id: 738
+    Types: []
+  - Name: crabrawler
+    Id: 739
+    Types: []
+  - Name: crabominable
+    Id: 740
+    Types: []
+  - Name: oricorio-baile
+    Id: 741
+    Types: []
+  - Name: cutiefly
+    Id: 742
+    Types: []
+  - Name: ribombee
+    Id: 743
+    Types: []
+  - Name: rockruff
+    Id: 744
+    Types: []
+  - Name: lycanroc-midday
+    Id: 745
+    Types: []
+  - Name: wishiwashi-solo
+    Id: 746
+    Types: []
+  - Name: mareanie
+    Id: 747
+    Types: []
+  - Name: toxapex
+    Id: 748
+    Types: []
+  - Name: mudbray
+    Id: 749
+    Types: []
+  - Name: mudsdale
+    Id: 750
+    Types: []
+  - Name: dewpider
+    Id: 751
+    Types: []
+  - Name: araquanid
+    Id: 752
+    Types: []
+  - Name: fomantis
+    Id: 753
+    Types: []
+  - Name: lurantis
+    Id: 754
+    Types: []
+  - Name: morelull
+    Id: 755
+    Types: []
+  - Name: shiinotic
+    Id: 756
+    Types: []
+  - Name: salandit
+    Id: 757
+    Types: []
+  - Name: salazzle
+    Id: 758
+    Types: []
+  - Name: stufful
+    Id: 759
+    Types: []
+  - Name: bewear
+    Id: 760
+    Types: []
+  - Name: bounsweet
+    Id: 761
+    Types: []
+  - Name: steenee
+    Id: 762
+    Types: []
+  - Name: tsareena
+    Id: 763
+    Types: []
+  - Name: comfey
+    Id: 764
+    Types: []
+  - Name: oranguru
+    Id: 765
+    Types: []
+  - Name: passimian
+    Id: 766
+    Types: []
+  - Name: wimpod
+    Id: 767
+    Types: []
+  - Name: golisopod
+    Id: 768
+    Types: []
+  - Name: sandygast
+    Id: 769
+    Types: []
+  - Name: palossand
+    Id: 770
+    Types: []
+  - Name: pyukumuku
+    Id: 771
+    Types: []
+  - Name: type-null
+    Id: 772
+    Types: []
+  - Name: silvally
+    Id: 773
+    Types: []
+  - Name: minior-red-meteor
+    Id: 774
+    Types: []
+  - Name: komala
+    Id: 775
+    Types: []
+  - Name: turtonator
+    Id: 776
+    Types: []
+  - Name: togedemaru
+    Id: 777
+    Types: []
+  - Name: mimikyu-disguised
+    Id: 778
+    Types: []
+  - Name: bruxish
+    Id: 779
+    Types: []
+  - Name: drampa
+    Id: 780
+    Types: []
+  - Name: dhelmise
+    Id: 781
+    Types: []
+  - Name: jangmo-o
+    Id: 782
+    Types: []
+  - Name: hakamo-o
+    Id: 783
+    Types: []
+  - Name: kommo-o
+    Id: 784
+    Types: []
+  - Name: tapu-koko
+    Id: 785
+    Types: []
+  - Name: tapu-lele
+    Id: 786
+    Types: []
+  - Name: tapu-bulu
+    Id: 787
+    Types: []
+  - Name: tapu-fini
+    Id: 788
+    Types: []
+  - Name: cosmog
+    Id: 789
+    Types: []
+  - Name: cosmoem
+    Id: 790
+    Types: []
+  - Name: solgaleo
+    Id: 791
+    Types: []
+  - Name: lunala
+    Id: 792
+    Types: []
+  - Name: nihilego
+    Id: 793
+    Types: []
+  - Name: buzzwole
+    Id: 794
+    Types: []
+  - Name: pheromosa
+    Id: 795
+    Types: []
+  - Name: xurkitree
+    Id: 796
+    Types: []
+  - Name: celesteela
+    Id: 797
+    Types: []
+  - Name: kartana
+    Id: 798
+    Types: []
+  - Name: guzzlord
+    Id: 799
+    Types: []
+  - Name: necrozma
+    Id: 800
+    Types: []
+  - Name: magearna
+    Id: 801
+    Types: []
+  - Name: marshadow
+    Id: 802
+    Types: []
+  - Name: poipole
+    Id: 803
+    Types: []
+  - Name: naganadel
+    Id: 804
+    Types: []
+  - Name: stakataka
+    Id: 805
+    Types: []
+  - Name: blacephalon
+    Id: 806
+    Types: []
+  - Name: zeraora
+    Id: 807
+    Types: []
+  - Name: meltan
+    Id: 808
+    Types: []
+  - Name: melmetal
+    Id: 809
+    Types: []
+  - Name: grookey
+    Id: 810
+    Types: []
+  - Name: thwackey
+    Id: 811
+    Types: []
+  - Name: rillaboom
+    Id: 812
+    Types: []
+  - Name: scorbunny
+    Id: 813
+    Types: []
+  - Name: raboot
+    Id: 814
+    Types: []
+  - Name: cinderace
+    Id: 815
+    Types: []
+  - Name: sobble
+    Id: 816
+    Types: []
+  - Name: drizzile
+    Id: 817
+    Types: []
+  - Name: inteleon
+    Id: 818
+    Types: []
+  - Name: skwovet
+    Id: 819
+    Types: []
+  - Name: greedent
+    Id: 820
+    Types: []
+  - Name: rookidee
+    Id: 821
+    Types: []
+  - Name: corvisquire
+    Id: 822
+    Types: []
+  - Name: corviknight
+    Id: 823
+    Types: []
+  - Name: blipbug
+    Id: 824
+    Types: []
+  - Name: dottler
+    Id: 825
+    Types: []
+  - Name: orbeetle
+    Id: 826
+    Types: []
+  - Name: nickit
+    Id: 827
+    Types: []
+  - Name: thievul
+    Id: 828
+    Types: []
+  - Name: gossifleur
+    Id: 829
+    Types: []
+  - Name: eldegoss
+    Id: 830
+    Types: []
+  - Name: wooloo
+    Id: 831
+    Types: []
+  - Name: dubwool
+    Id: 832
+    Types: []
+  - Name: chewtle
+    Id: 833
+    Types: []
+  - Name: drednaw
+    Id: 834
+    Types: []
+  - Name: yamper
+    Id: 835
+    Types: []
+  - Name: boltund
+    Id: 836
+    Types: []
+  - Name: rolycoly
+    Id: 837
+    Types: []
+  - Name: carkol
+    Id: 838
+    Types: []
+  - Name: coalossal
+    Id: 839
+    Types: []
+  - Name: applin
+    Id: 840
+    Types: []
+  - Name: flapple
+    Id: 841
+    Types: []
+  - Name: appletun
+    Id: 842
+    Types: []
+  - Name: silicobra
+    Id: 843
+    Types: []
+  - Name: sandaconda
+    Id: 844
+    Types: []
+  - Name: cramorant
+    Id: 845
+    Types: []
+  - Name: arrokuda
+    Id: 846
+    Types: []
+  - Name: barraskewda
+    Id: 847
+    Types: []
+  - Name: toxel
+    Id: 848
+    Types: []
+  - Name: toxtricity-amped
+    Id: 849
+    Types: []
+  - Name: sizzlipede
+    Id: 850
+    Types: []
+  - Name: centiskorch
+    Id: 851
+    Types: []
+  - Name: clobbopus
+    Id: 852
+    Types: []
+  - Name: grapploct
+    Id: 853
+    Types: []
+  - Name: sinistea
+    Id: 854
+    Types: []
+  - Name: polteageist
+    Id: 855
+    Types: []
+  - Name: hatenna
+    Id: 856
+    Types: []
+  - Name: hattrem
+    Id: 857
+    Types: []
+  - Name: hatterene
+    Id: 858
+    Types: []
+  - Name: impidimp
+    Id: 859
+    Types: []
+  - Name: morgrem
+    Id: 860
+    Types: []
+  - Name: grimmsnarl
+    Id: 861
+    Types: []
+  - Name: obstagoon
+    Id: 862
+    Types: []
+  - Name: perrserker
+    Id: 863
+    Types: []
+  - Name: cursola
+    Id: 864
+    Types: []
+  - Name: sirfetchd
+    Id: 865
+    Types: []
+  - Name: mr-rime
+    Id: 866
+    Types: []
+  - Name: runerigus
+    Id: 867
+    Types: []
+  - Name: milcery
+    Id: 868
+    Types: []
+  - Name: alcremie
+    Id: 869
+    Types: []
+  - Name: falinks
+    Id: 870
+    Types: []
+  - Name: pincurchin
+    Id: 871
+    Types: []
+  - Name: snom
+    Id: 872
+    Types: []
+  - Name: frosmoth
+    Id: 873
+    Types: []
+  - Name: stonjourner
+    Id: 874
+    Types: []
+  - Name: eiscue-ice
+    Id: 875
+    Types: []
+  - Name: indeedee-male
+    Id: 876
+    Types: []
+  - Name: morpeko-full-belly
+    Id: 877
+    Types: []
+  - Name: cufant
+    Id: 878
+    Types: []
+  - Name: copperajah
+    Id: 879
+    Types: []
+  - Name: dracozolt
+    Id: 880
+    Types: []
+  - Name: arctozolt
+    Id: 881
+    Types: []
+  - Name: dracovish
+    Id: 882
+    Types: []
+  - Name: arctovish
+    Id: 883
+    Types: []
+  - Name: duraludon
+    Id: 884
+    Types: []
+  - Name: dreepy
+    Id: 885
+    Types: []
+  - Name: drakloak
+    Id: 886
+    Types: []
+  - Name: dragapult
+    Id: 887
+    Types: []
+  - Name: zacian
+    Id: 888
+    Types: []
+  - Name: zamazenta
+    Id: 889
+    Types: []
+  - Name: eternatus
+    Id: 890
+    Types: []
+  - Name: kubfu
+    Id: 891
+    Types: []
+  - Name: urshifu-single-strike
+    Id: 892
+    Types: []
+  - Name: zarude
+    Id: 893
+    Types: []
+  - Name: regieleki
+    Id: 894
+    Types: []
+  - Name: regidrago
+    Id: 895
+    Types: []
+  - Name: glastrier
+    Id: 896
+    Types: []
+  - Name: spectrier
+    Id: 897
+    Types: []
+  - Name: calyrex
+    Id: 898
+    Types: []
+  - Name: wyrdeer
+    Id: 899
+    Types: []
+  - Name: kleavor
+    Id: 900
+    Types: []
+  - Name: ursaluna
+    Id: 901
+    Types: []
+  - Name: basculegion-male
+    Id: 902
+    Types: []
+  - Name: sneasler
+    Id: 903
+    Types: []
+  - Name: overqwil
+    Id: 904
+    Types: []
+  - Name: enamorus-incarnate
+    Id: 905
+    Types: []
+  - Name: sprigatito
+    Id: 906
+    Types: []
+  - Name: floragato
+    Id: 907
+    Types: []
+  - Name: meowscarada
+    Id: 908
+    Types: []
+  - Name: fuecoco
+    Id: 909
+    Types: []
+  - Name: crocalor
+    Id: 910
+    Types: []
+  - Name: skeledirge
+    Id: 911
+    Types: []
+  - Name: quaxly
+    Id: 912
+    Types: []
+  - Name: quaxwell
+    Id: 913
+    Types: []
+  - Name: quaquaval
+    Id: 914
+    Types: []
+  - Name: lechonk
+    Id: 915
+    Types: []
+  - Name: oinkologne
+    Id: 916
+    Types: []
+  - Name: tarountula
+    Id: 917
+    Types: []
+  - Name: spidops
+    Id: 918
+    Types: []
+  - Name: nymble
+    Id: 919
+    Types: []
+  - Name: lokix
+    Id: 920
+    Types: []
+  - Name: pawmi
+    Id: 921
+    Types: []
+  - Name: pawmo
+    Id: 922
+    Types: []
+  - Name: pawmot
+    Id: 923
+    Types: []
+  - Name: tandemaus
+    Id: 924
+    Types: []
+  - Name: maushold
+    Id: 925
+    Types: []
+  - Name: fidough
+    Id: 926
+    Types: []
+  - Name: dachsbun
+    Id: 927
+    Types: []
+  - Name: smoliv
+    Id: 928
+    Types: []
+  - Name: dolliv
+    Id: 929
+    Types: []
+  - Name: arboliva
+    Id: 930
+    Types: []
+  - Name: squawkabilly
+    Id: 931
+    Types: []
+  - Name: nacli
+    Id: 932
+    Types: []
+  - Name: naclstack
+    Id: 933
+    Types: []
+  - Name: garganacl
+    Id: 934
+    Types: []
+  - Name: charcadet
+    Id: 935
+    Types: []
+  - Name: armarouge
+    Id: 936
+    Types: []
+  - Name: ceruledge
+    Id: 937
+    Types: []
+  - Name: tadbulb
+    Id: 938
+    Types: []
+  - Name: bellibolt
+    Id: 939
+    Types: []
+  - Name: wattrel
+    Id: 940
+    Types: []
+  - Name: kilowattrel
+    Id: 941
+    Types: []
+  - Name: maschiff
+    Id: 942
+    Types: []
+  - Name: mabosstiff
+    Id: 943
+    Types: []
+  - Name: shroodle
+    Id: 944
+    Types: []
+  - Name: grafaiai
+    Id: 945
+    Types: []
+  - Name: bramblin
+    Id: 946
+    Types: []
+  - Name: brambleghast
+    Id: 947
+    Types: []
+  - Name: toedscool
+    Id: 948
+    Types: []
+  - Name: toedscruel
+    Id: 949
+    Types: []
+  - Name: klawf
+    Id: 950
+    Types: []
+  - Name: capsakid
+    Id: 951
+    Types: []
+  - Name: scovillain
+    Id: 952
+    Types: []
+  - Name: rellor
+    Id: 953
+    Types: []
+  - Name: rabsca
+    Id: 954
+    Types: []
+  - Name: flittle
+    Id: 955
+    Types: []
+  - Name: espathra
+    Id: 956
+    Types: []
+  - Name: tinkatink
+    Id: 957
+    Types: []
+  - Name: tinkatuff
+    Id: 958
+    Types: []
+  - Name: tinkaton
+    Id: 959
+    Types: []
+  - Name: wiglett
+    Id: 960
+    Types: []
+  - Name: wugtrio
+    Id: 961
+    Types: []
+  - Name: bombirdier
+    Id: 962
+    Types: []
+  - Name: finizen
+    Id: 963
+    Types: []
+  - Name: palafin
+    Id: 964
+    Types: []
+  - Name: varoom
+    Id: 965
+    Types: []
+  - Name: revavroom
+    Id: 966
+    Types: []
+  - Name: cyclizar
+    Id: 967
+    Types: []
+  - Name: orthworm
+    Id: 968
+    Types: []
+  - Name: glimmet
+    Id: 969
+    Types: []
+  - Name: glimmora
+    Id: 970
+    Types: []
+  - Name: greavard
+    Id: 971
+    Types: []
+  - Name: houndstone
+    Id: 972
+    Types: []
+  - Name: flamigo
+    Id: 973
+    Types: []
+  - Name: cetoddle
+    Id: 974
+    Types: []
+  - Name: cetitan
+    Id: 975
+    Types: []
+  - Name: veluza
+    Id: 976
+    Types: []
+  - Name: dondozo
+    Id: 977
+    Types: []
+  - Name: tatsugiri
+    Id: 978
+    Types: []
+  - Name: annihilape
+    Id: 979
+    Types: []
+  - Name: clodsire
+    Id: 980
+    Types: []
+  - Name: farigiraf
+    Id: 981
+    Types: []
+  - Name: dudunsparce
+    Id: 982
+    Types: []
+  - Name: kingambit
+    Id: 983
+    Types: []
+  - Name: great-tusk
+    Id: 984
+    Types: []
+  - Name: scream-tail
+    Id: 985
+    Types: []
+  - Name: brute-bonnet
+    Id: 986
+    Types: []
+  - Name: flutter-mane
+    Id: 987
+    Types: []
+  - Name: slither-wing
+    Id: 988
+    Types: []
+  - Name: sandy-shocks
+    Id: 989
+    Types: []
+  - Name: iron-treads
+    Id: 990
+    Types: []
+  - Name: iron-bundle
+    Id: 991
+    Types: []
+  - Name: iron-hands
+    Id: 992
+    Types: []
+  - Name: iron-jugulis
+    Id: 993
+    Types: []
+  - Name: iron-moth
+    Id: 994
+    Types: []
+  - Name: iron-thorns
+    Id: 995
+    Types: []
+  - Name: frigibax
+    Id: 996
+    Types: []
+  - Name: arctibax
+    Id: 997
+    Types: []
+  - Name: baxcalibur
+    Id: 998
+    Types: []
+  - Name: gimmighoul
+    Id: 999
+    Types: []
+  - Name: gholdengo
+    Id: 1000
+    Types: []
+  - Name: wo-chien
+    Id: 1001
+    Types: []
+  - Name: chien-pao
+    Id: 1002
+    Types: []
+  - Name: ting-lu
+    Id: 1003
+    Types: []
+  - Name: chi-yu
+    Id: 1004
+    Types: []
+  - Name: roaring-moon
+    Id: 1005
+    Types: []
+  - Name: iron-valiant
+    Id: 1006
+    Types: []
+  - Name: koraidon
+    Id: 1007
+    Types: []
+  - Name: miraidon
+    Id: 1008
+    Types: []
+  - Name: walking-wake
+    Id: 1009
+    Types: []
+  - Name: iron-leaves
+    Id: 1010
+    Types: []
+  - Name: deoxys-attack
+    Id: 1011
+    Types: []
+  - Name: deoxys-defense
+    Id: 1012
+    Types: []
+  - Name: deoxys-speed
+    Id: 1013
+    Types: []
+  - Name: wormadam-sandy
+    Id: 1014
+    Types: []
+  - Name: wormadam-trash
+    Id: 1015
+    Types: []
+  - Name: shaymin-sky
+    Id: 1016
+    Types: []
+  - Name: giratina-origin
+    Id: 1017
+    Types: []
+  - Name: rotom-heat
+    Id: 1018
+    Types: []
+  - Name: rotom-wash
+    Id: 1019
+    Types: []
+  - Name: rotom-frost
+    Id: 1020
+    Types: []
+  - Name: rotom-fan
+    Id: 1021
+    Types: []
+  - Name: rotom-mow
+    Id: 1022
+    Types: []
+  - Name: castform-sunny
+    Id: 1023
+    Types: []
+  - Name: castform-rainy
+    Id: 1024
+    Types: []
+  - Name: castform-snowy
+    Id: 1025
+    Types: []
+  - Name: basculin-blue-striped
+    Id: 1026
+    Types: []
+  - Name: darmanitan-zen
+    Id: 1027
+    Types: []
+  - Name: meloetta-pirouette
+    Id: 1028
+    Types: []
+  - Name: tornadus-therian
+    Id: 1029
+    Types: []
+  - Name: thundurus-therian
+    Id: 1030
+    Types: []
+  - Name: landorus-therian
+    Id: 1031
+    Types: []
+  - Name: kyurem-black
+    Id: 1032
+    Types: []
+  - Name: kyurem-white
+    Id: 1033
+    Types: []
+  - Name: keldeo-resolute
+    Id: 1034
+    Types: []
+  - Name: meowstic-female
+    Id: 1035
+    Types: []
+  - Name: aegislash-blade
+    Id: 1036
+    Types: []
+  - Name: pumpkaboo-small
+    Id: 1037
+    Types: []
+  - Name: pumpkaboo-large
+    Id: 1038
+    Types: []
+  - Name: pumpkaboo-super
+    Id: 1039
+    Types: []
+  - Name: gourgeist-small
+    Id: 1040
+    Types: []
+  - Name: gourgeist-large
+    Id: 1041
+    Types: []
+  - Name: gourgeist-super
+    Id: 1042
+    Types: []
+  - Name: venusaur-mega
+    Id: 1043
+    Types: []
+  - Name: charizard-mega-x
+    Id: 1044
+    Types: []
+  - Name: charizard-mega-y
+    Id: 1045
+    Types: []
+  - Name: blastoise-mega
+    Id: 1046
+    Types: []
+  - Name: alakazam-mega
+    Id: 1047
+    Types: []
+  - Name: gengar-mega
+    Id: 1048
+    Types: []
+  - Name: kangaskhan-mega
+    Id: 1049
+    Types: []
+  - Name: pinsir-mega
+    Id: 1050
+    Types: []
+  - Name: gyarados-mega
+    Id: 1051
+    Types: []
+  - Name: aerodactyl-mega
+    Id: 1052
+    Types: []
+  - Name: mewtwo-mega-x
+    Id: 1053
+    Types: []
+  - Name: mewtwo-mega-y
+    Id: 1054
+    Types: []
+  - Name: ampharos-mega
+    Id: 1055
+    Types: []
+  - Name: scizor-mega
+    Id: 1056
+    Types: []
+  - Name: heracross-mega
+    Id: 1057
+    Types: []
+  - Name: houndoom-mega
+    Id: 1058
+    Types: []
+  - Name: tyranitar-mega
+    Id: 1059
+    Types: []
+  - Name: blaziken-mega
+    Id: 1060
+    Types: []
+  - Name: gardevoir-mega
+    Id: 1061
+    Types: []
+  - Name: mawile-mega
+    Id: 1062
+    Types: []
+  - Name: aggron-mega
+    Id: 1063
+    Types: []
+  - Name: medicham-mega
+    Id: 1064
+    Types: []
+  - Name: manectric-mega
+    Id: 1065
+    Types: []
+  - Name: banette-mega
+    Id: 1066
+    Types: []
+  - Name: absol-mega
+    Id: 1067
+    Types: []
+  - Name: garchomp-mega
+    Id: 1068
+    Types: []
+  - Name: lucario-mega
+    Id: 1069
+    Types: []
+  - Name: abomasnow-mega
+    Id: 1070
+    Types: []
+  - Name: floette-eternal
+    Id: 1071
+    Types: []
+  - Name: latias-mega
+    Id: 1072
+    Types: []
+  - Name: latios-mega
+    Id: 1073
+    Types: []
+  - Name: swampert-mega
+    Id: 1074
+    Types: []
+  - Name: sceptile-mega
+    Id: 1075
+    Types: []
+  - Name: sableye-mega
+    Id: 1076
+    Types: []
+  - Name: altaria-mega
+    Id: 1077
+    Types: []
+  - Name: gallade-mega
+    Id: 1078
+    Types: []
+  - Name: audino-mega
+    Id: 1079
+    Types: []
+  - Name: sharpedo-mega
+    Id: 1080
+    Types: []
+  - Name: slowbro-mega
+    Id: 1081
+    Types: []
+  - Name: steelix-mega
+    Id: 1082
+    Types: []
+  - Name: pidgeot-mega
+    Id: 1083
+    Types: []
+  - Name: glalie-mega
+    Id: 1084
+    Types: []
+  - Name: diancie-mega
+    Id: 1085
+    Types: []
+  - Name: metagross-mega
+    Id: 1086
+    Types: []
+  - Name: kyogre-primal
+    Id: 1087
+    Types: []
+  - Name: groudon-primal
+    Id: 1088
+    Types: []
+  - Name: rayquaza-mega
+    Id: 1089
+    Types: []
+  - Name: pikachu-rock-star
+    Id: 1090
+    Types: []
+  - Name: pikachu-belle
+    Id: 1091
+    Types: []
+  - Name: pikachu-pop-star
+    Id: 1092
+    Types: []
+  - Name: pikachu-phd
+    Id: 1093
+    Types: []
+  - Name: pikachu-libre
+    Id: 1094
+    Types: []
+  - Name: pikachu-cosplay
+    Id: 1095
+    Types: []
+  - Name: hoopa-unbound
+    Id: 1096
+    Types: []
+  - Name: camerupt-mega
+    Id: 1097
+    Types: []
+  - Name: lopunny-mega
+    Id: 1098
+    Types: []
+  - Name: salamence-mega
+    Id: 1099
+    Types: []
+  - Name: beedrill-mega
+    Id: 1100
+    Types: []
+  - Name: rattata-alola
+    Id: 1101
+    Types: []
+  - Name: raticate-alola
+    Id: 1102
+    Types: []
+  - Name: raticate-totem-alola
+    Id: 1103
+    Types: []
+  - Name: pikachu-original-cap
+    Id: 1104
+    Types: []
+  - Name: pikachu-hoenn-cap
+    Id: 1105
+    Types: []
+  - Name: pikachu-sinnoh-cap
+    Id: 1106
+    Types: []
+  - Name: pikachu-unova-cap
+    Id: 1107
+    Types: []
+  - Name: pikachu-kalos-cap
+    Id: 1108
+    Types: []
+  - Name: pikachu-alola-cap
+    Id: 1109
+    Types: []
+  - Name: raichu-alola
+    Id: 1110
+    Types: []
+  - Name: sandshrew-alola
+    Id: 1111
+    Types: []
+  - Name: sandslash-alola
+    Id: 1112
+    Types: []
+  - Name: vulpix-alola
+    Id: 1113
+    Types: []
+  - Name: ninetales-alola
+    Id: 1114
+    Types: []
+  - Name: diglett-alola
+    Id: 1115
+    Types: []
+  - Name: dugtrio-alola
+    Id: 1116
+    Types: []
+  - Name: meowth-alola
+    Id: 1117
+    Types: []
+  - Name: persian-alola
+    Id: 1118
+    Types: []
+  - Name: geodude-alola
+    Id: 1119
+    Types: []
+  - Name: graveler-alola
+    Id: 1120
+    Types: []
+  - Name: golem-alola
+    Id: 1121
+    Types: []
+  - Name: grimer-alola
+    Id: 1122
+    Types: []
+  - Name: muk-alola
+    Id: 1123
+    Types: []
+  - Name: exeggutor-alola
+    Id: 1124
+    Types: []
+  - Name: marowak-alola
+    Id: 1125
+    Types: []
+  - Name: greninja-battle-bond
+    Id: 1126
+    Types: []
+  - Name: greninja-ash
+    Id: 1127
+    Types: []
+  - Name: zygarde-10-power-construct
+    Id: 1128
+    Types: []
+  - Name: zygarde-50-power-construct
+    Id: 1129
+    Types: []
+  - Name: zygarde-complete
+    Id: 1130
+    Types: []
+  - Name: gumshoos-totem
+    Id: 1131
+    Types: []
+  - Name: vikavolt-totem
+    Id: 1132
+    Types: []
+  - Name: oricorio-pom-pom
+    Id: 1133
+    Types: []
+  - Name: oricorio-pau
+    Id: 1134
+    Types: []
+  - Name: oricorio-sensu
+    Id: 1135
+    Types: []
+  - Name: lycanroc-midnight
+    Id: 1136
+    Types: []
+  - Name: wishiwashi-school
+    Id: 1137
+    Types: []
+  - Name: lurantis-totem
+    Id: 1138
+    Types: []
+  - Name: salazzle-totem
+    Id: 1139
+    Types: []
+  - Name: minior-orange-meteor
+    Id: 1140
+    Types: []
+  - Name: minior-yellow-meteor
+    Id: 1141
+    Types: []
+  - Name: minior-green-meteor
+    Id: 1142
+    Types: []
+  - Name: minior-blue-meteor
+    Id: 1143
+    Types: []
+  - Name: minior-indigo-meteor
+    Id: 1144
+    Types: []
+  - Name: minior-violet-meteor
+    Id: 1145
+    Types: []
+  - Name: minior-red
+    Id: 1146
+    Types: []
+  - Name: minior-orange
+    Id: 1147
+    Types: []
+  - Name: minior-yellow
+    Id: 1148
+    Types: []
+  - Name: minior-green
+    Id: 1149
+    Types: []
+  - Name: minior-blue
+    Id: 1150
+    Types: []
+  - Name: minior-indigo
+    Id: 1151
+    Types: []
+  - Name: minior-violet
+    Id: 1152
+    Types: []
+  - Name: mimikyu-busted
+    Id: 1153
+    Types: []
+  - Name: mimikyu-totem-disguised
+    Id: 1154
+    Types: []
+  - Name: mimikyu-totem-busted
+    Id: 1155
+    Types: []
+  - Name: kommo-o-totem
+    Id: 1156
+    Types: []
+  - Name: magearna-original
+    Id: 1157
+    Types: []
+  - Name: pikachu-partner-cap
+    Id: 1158
+    Types: []
+  - Name: marowak-totem
+    Id: 1159
+    Types: []
+  - Name: ribombee-totem
+    Id: 1160
+    Types: []
+  - Name: rockruff-own-tempo
+    Id: 1161
+    Types: []
+  - Name: lycanroc-dusk
+    Id: 1162
+    Types: []
+  - Name: araquanid-totem
+    Id: 1163
+    Types: []
+  - Name: togedemaru-totem
+    Id: 1164
+    Types: []
+  - Name: necrozma-dusk
+    Id: 1165
+    Types: []
+  - Name: necrozma-dawn
+    Id: 1166
+    Types: []
+  - Name: necrozma-ultra
+    Id: 1167
+    Types: []
+  - Name: pikachu-starter
+    Id: 1168
+    Types: []
+  - Name: eevee-starter
+    Id: 1169
+    Types: []
+  - Name: pikachu-world-cap
+    Id: 1170
+    Types: []
+  - Name: meowth-galar
+    Id: 1171
+    Types: []
+  - Name: ponyta-galar
+    Id: 1172
+    Types: []
+  - Name: rapidash-galar
+    Id: 1173
+    Types: []
+  - Name: slowpoke-galar
+    Id: 1174
+    Types: []
+  - Name: slowbro-galar
+    Id: 1175
+    Types: []
+  - Name: farfetchd-galar
+    Id: 1176
+    Types: []
+  - Name: weezing-galar
+    Id: 1177
+    Types: []
+  - Name: mr-mime-galar
+    Id: 1178
+    Types: []
+  - Name: articuno-galar
+    Id: 1179
+    Types: []
+  - Name: zapdos-galar
+    Id: 1180
+    Types: []
+  - Name: moltres-galar
+    Id: 1181
+    Types: []
+  - Name: slowking-galar
+    Id: 1182
+    Types: []
+  - Name: corsola-galar
+    Id: 1183
+    Types: []
+  - Name: zigzagoon-galar
+    Id: 1184
+    Types: []
+  - Name: linoone-galar
+    Id: 1185
+    Types: []
+  - Name: darumaka-galar
+    Id: 1186
+    Types: []
+  - Name: darmanitan-galar-standard
+    Id: 1187
+    Types: []
+  - Name: darmanitan-galar-zen
+    Id: 1188
+    Types: []
+  - Name: yamask-galar
+    Id: 1189
+    Types: []
+  - Name: stunfisk-galar
+    Id: 1190
+    Types: []
+  - Name: zygarde-10
+    Id: 1191
+    Types: []
+  - Name: cramorant-gulping
+    Id: 1192
+    Types: []
+  - Name: cramorant-gorging
+    Id: 1193
+    Types: []
+  - Name: toxtricity-low-key
+    Id: 1194
+    Types: []
+  - Name: eiscue-noice
+    Id: 1195
+    Types: []
+  - Name: indeedee-female
+    Id: 1196
+    Types: []
+  - Name: morpeko-hangry
+    Id: 1197
+    Types: []
+  - Name: zacian-crowned
+    Id: 1198
+    Types: []
+  - Name: zamazenta-crowned
+    Id: 1199
+    Types: []
+  - Name: eternatus-eternamax
+    Id: 1200
+    Types: []
+  - Name: urshifu-rapid-strike
+    Id: 1201
+    Types: []
+  - Name: zarude-dada
+    Id: 1202
+    Types: []
+  - Name: calyrex-ice
+    Id: 1203
+    Types: []
+  - Name: calyrex-shadow
+    Id: 1204
+    Types: []
+  - Name: venusaur-gmax
+    Id: 1205
+    Types: []
+  - Name: charizard-gmax
+    Id: 1206
+    Types: []
+  - Name: blastoise-gmax
+    Id: 1207
+    Types: []
+  - Name: butterfree-gmax
+    Id: 1208
+    Types: []
+  - Name: pikachu-gmax
+    Id: 1209
+    Types: []
+  - Name: meowth-gmax
+    Id: 1210
+    Types: []
+  - Name: machamp-gmax
+    Id: 1211
+    Types: []
+  - Name: gengar-gmax
+    Id: 1212
+    Types: []
+  - Name: kingler-gmax
+    Id: 1213
+    Types: []
+  - Name: lapras-gmax
+    Id: 1214
+    Types: []
+  - Name: eevee-gmax
+    Id: 1215
+    Types: []
+  - Name: snorlax-gmax
+    Id: 1216
+    Types: []
+  - Name: garbodor-gmax
+    Id: 1217
+    Types: []
+  - Name: melmetal-gmax
+    Id: 1218
+    Types: []
+  - Name: rillaboom-gmax
+    Id: 1219
+    Types: []
+  - Name: cinderace-gmax
+    Id: 1220
+    Types: []
+  - Name: inteleon-gmax
+    Id: 1221
+    Types: []
+  - Name: corviknight-gmax
+    Id: 1222
+    Types: []
+  - Name: orbeetle-gmax
+    Id: 1223
+    Types: []
+  - Name: drednaw-gmax
+    Id: 1224
+    Types: []
+  - Name: coalossal-gmax
+    Id: 1225
+    Types: []
+  - Name: flapple-gmax
+    Id: 1226
+    Types: []
+  - Name: appletun-gmax
+    Id: 1227
+    Types: []
+  - Name: sandaconda-gmax
+    Id: 1228
+    Types: []
+  - Name: toxtricity-amped-gmax
+    Id: 1229
+    Types: []
+  - Name: centiskorch-gmax
+    Id: 1230
+    Types: []
+  - Name: hatterene-gmax
+    Id: 1231
+    Types: []
+  - Name: grimmsnarl-gmax
+    Id: 1232
+    Types: []
+  - Name: alcremie-gmax
+    Id: 1233
+    Types: []
+  - Name: copperajah-gmax
+    Id: 1234
+    Types: []
+  - Name: duraludon-gmax
+    Id: 1235
+    Types: []
+  - Name: urshifu-single-strike-gmax
+    Id: 1236
+    Types: []
+  - Name: urshifu-rapid-strike-gmax
+    Id: 1237
+    Types: []
+  - Name: toxtricity-low-key-gmax
+    Id: 1238
+    Types: []
+  - Name: growlithe-hisui
+    Id: 1239
+    Types: []
+  - Name: arcanine-hisui
+    Id: 1240
+    Types: []
+  - Name: voltorb-hisui
+    Id: 1241
+    Types: []
+  - Name: electrode-hisui
+    Id: 1242
+    Types: []
+  - Name: typhlosion-hisui
+    Id: 1243
+    Types: []
+  - Name: qwilfish-hisui
+    Id: 1244
+    Types: []
+  - Name: sneasel-hisui
+    Id: 1245
+    Types: []
+  - Name: samurott-hisui
+    Id: 1246
+    Types: []
+  - Name: lilligant-hisui
+    Id: 1247
+    Types: []
+  - Name: zorua-hisui
+    Id: 1248
+    Types: []
+  - Name: zoroark-hisui
+    Id: 1249
+    Types: []
+  - Name: braviary-hisui
+    Id: 1250
+    Types: []
+  - Name: sliggoo-hisui
+    Id: 1251
+    Types: []
+  - Name: goodra-hisui
+    Id: 1252
+    Types: []
+  - Name: avalugg-hisui
+    Id: 1253
+    Types: []
+  - Name: decidueye-hisui
+    Id: 1254
+    Types: []
+  - Name: dialga-origin
+    Id: 1255
+    Types: []
+  - Name: palkia-origin
+    Id: 1256
+    Types: []
+  - Name: basculin-white-striped
+    Id: 1257
+    Types: []
+  - Name: basculegion-female
+    Id: 1258
+    Types: []
+  - Name: enamorus-therian
+    Id: 1259
+    Types: []
+  - Name: tauros-paldea-combat-breed
+    Id: 1260
+    Types: []
+  - Name: tauros-paldea-blaze-breed
+    Id: 1261
+    Types: []
+  - Name: tauros-paldea-aqua-breed
+    Id: 1262
+    Types: []
+  - Name: wooper-paldea
+    Id: 1263
+    Types: []
+  - Name: oinkologne-female
+    Id: 1264
+    Types: []
+  - Name: dudunsparce-three-segment
+    Id: 1265
+    Types: []
+  - Name: palafin-hero
+    Id: 1266
+    Types: []
+  - Name: maushold-family-of-three
+    Id: 1267
+    Types: []
+  - Name: tatsugiri-droopy
+    Id: 1268
+    Types: []
+  - Name: tatsugiri-stretchy
+    Id: 1269
+    Types: []
+  - Name: squawkabilly-blue-plumage
+    Id: 1270
+    Types: []
+  - Name: squawkabilly-yellow-plumage
+    Id: 1271
+    Types: []
+  - Name: squawkabilly-white-plumage
+    Id: 1272
+    Types: []
+  - Name: gimmighoul-roaming
+    Id: 1273
+    Types: []
+  - Name: koraidon-limited-build
+    Id: 1274
+    Types: []
+  - Name: koraidon-sprinting-build
+    Id: 1275
+    Types: []
+  - Name: koraidon-swimming-build
+    Id: 1276
+    Types: []
+  - Name: koraidon-gliding-build
+    Id: 1277
+    Types: []
+  - Name: miraidon-low-power-mode
+    Id: 1278
+    Types: []
+  - Name: miraidon-drive-mode
+    Id: 1279
+    Types: []
+  - Name: miraidon-aquatic-mode
+    Id: 1280
+    Types: []
+  - Name: miraidon-glide-mode
+    Id: 1281
+    Types: []
+  _search: 300
+  _results:
+  - Name: skitty
+    Id: 300
+    Types: []

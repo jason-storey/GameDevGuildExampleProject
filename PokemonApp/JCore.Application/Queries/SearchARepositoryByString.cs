@@ -14,7 +14,9 @@ namespace JCore.Application.Queries
             _query = query;
         }
 
-        public async Task<IEnumerable<T>> Execute() => _repository;
+#pragma warning disable CS1998
+        public async Task<IEnumerable<T>> Execute() => new List<T> {_repository.GetById(_query)};
+#pragma warning restore CS1998
     }
     
 

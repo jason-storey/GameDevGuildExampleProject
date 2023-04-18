@@ -9,8 +9,18 @@ namespace JCore.Collections
     public class Index<T> : IEnumerable<T>,IRepository<T>
     {
         readonly Dictionary<string, T> _index;
+        readonly Func<T, string> _createKey;
 
-        public Index(Dictionary<string,T> dictionary) => _index = dictionary;
+        public Index(Dictionary<string,T> dictionary) : this(dictionary,CreateKeyFromHash) { }
+
+        static string CreateKeyFromHash(T item) => item.GetHashCode().ToString();
+
+        public Index(Dictionary<string,T> dictionary,Func<T,string> createKey)
+        {
+            _index = dictionary;
+            _createKey = createKey;
+        }
+
         public Index(bool caseSensitive = false) => _index = new Dictionary<string, T>(caseSensitive ? StringComparer.Ordinal :  StringComparer.OrdinalIgnoreCase);
 
         public Dictionary<string, T> ToDictionary() => _index;
@@ -66,6 +76,11 @@ namespace JCore.Collections
         public IEnumerable<T> GetAll() => _index.Values;
         public void Update(string key, T item) => _index[key] = item;
         public void Delete(string key) => _index.Remove(key);
-        public void Create(string key, T item) => _index[key] = item;
+        public void Add(T item)
+        {
+            var key = _createKey.Invoke(item);
+            if (string.IsNullOrWhiteSpace(key)) return;
+            _index[key] = item;
+        }
     }
 }

@@ -9,7 +9,6 @@ namespace JCore.Search
         AutocompleteTrie _autoComplete;
         BKTree _spellcheck;
         HashedListDictionary<string> _phonetics;
-        BM25 _ranker;
         public SearchEngine(List<string> documents)
         {
             _autoComplete = new AutocompleteTrie();

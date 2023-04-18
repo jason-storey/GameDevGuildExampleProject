@@ -12,7 +12,7 @@ namespace JCore
 
         public RepositoryFromList() : this(new List<T>(),CreateIDFromIndex) { }
 
-        static string CreateIDFromIndex(IList<T> all,T current) => all.IndexOf(current).ToString();
+        static string CreateIDFromIndex(IList<T> all,T current) => (all.IndexOf(current)+1).ToString();
         
         public RepositoryFromList(Func<IList<T>,T, string> filter) : this(new List<T>(), filter){}
         public RepositoryFromList(List<T> list,Func<IList<T>,T,string> idFilter)
@@ -20,15 +20,16 @@ namespace JCore
             _items = list;
             _idFilter = idFilter;
         }
+        
 
         public void SetList(List<T> items) => _items = items;
-        public void AddRange(IEnumerable<T> items) => _items.AddRange(items);
+        public void AddRange(params T[] items) => _items.AddRange(items);
 
         public IEnumerator<T> GetEnumerator() => _items.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-        T IReadonlyRepository<T>.GetById(string key) => 
+        public T GetById(string key) => 
             _items.FirstOrDefault(GetItemMatchingID(key));
 
         Func<T, bool> GetItemMatchingID(string key)
@@ -37,7 +38,7 @@ namespace JCore
             return x => _idFilter.Invoke(_items,x).Equals(key);
         }
         
-        IEnumerable<T> IRepository<T>.GetAll() => _items;
+        IEnumerable<T> GetAll() => _items;
 
         public void Update(string key, T item) =>
             TryOperateOnValidId(key, index =>
@@ -58,15 +59,8 @@ namespace JCore
         public void Delete(string key) => TryOperateOnValidId(key, index => 
             _items.RemoveAt(index));
 
-        public void Create(string key, T item) => _items.Add(item);
-
-        T IRepository<T>.GetById(string key)
-        {
-            T selected = default;
-            TryOperateOnValidId(key, index => selected = _items[index]);
-            return selected;
-        }
-
+        public void Add(T item) => _items.Add(item);
+        
         IEnumerable<T> IReadonlyRepository<T>.GetAll() => _items;
     }
 }

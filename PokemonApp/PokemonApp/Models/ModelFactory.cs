@@ -8,7 +8,10 @@
             var appPokemon = new Pokemon
             {
                 Id = pokemon.Id,
-                Name = pokemon.Name
+                Name = pokemon.Name,
+                Types = pokemon.Types,
+                Weight = pokemon.Weight,
+                Height = pokemon.Height
             };
             return appPokemon;
         }

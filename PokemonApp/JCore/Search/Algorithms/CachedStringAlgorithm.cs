@@ -20,7 +20,7 @@ namespace JCore.Search
             var item = _cache.GetById(term);
             if (!string.IsNullOrWhiteSpace(item)) return item;
             item = _algorithm.Invoke(term);
-            _cache.Create(term,item);
+            _cache.Add(item);
             return item;
         }
     }
