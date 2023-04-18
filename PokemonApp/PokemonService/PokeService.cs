@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using PokemonService.Models;
-using static ModelFactory;
+using static ApiModelFactory;
 namespace PokemonService
 {
     public class PokeService
