@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using JCore;
 using JCore.Application;
 using JCore.Application.Views;
 using JCore.Extensions;

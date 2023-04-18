@@ -62,7 +62,7 @@
         <Compile Include="Models\ModelFactory.cs" />
         <Compile Include="Models\Pokemon.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Repositories\PokemonServiceRepository.cs" />
+        <Compile Include="Repositories\PokemonApiRepository.cs" />
         <Compile Include="Usecases\SearchForPokemon.cs" />
     </ItemGroup>
     <ItemGroup>

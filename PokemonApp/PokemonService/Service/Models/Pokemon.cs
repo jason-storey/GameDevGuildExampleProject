@@ -65,7 +65,7 @@ public class PokemonStat
     public int Effort;
 }
 
-public static class ModelFactory
+public static class ApiModelFactory
     {
         public static Pokemon Convert(PokemonResource p)
         {
