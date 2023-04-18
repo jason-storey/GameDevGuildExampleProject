@@ -81,10 +81,9 @@ namespace PokemonService
 
         #endregion
         
-        public async Task<PokemonResource> GetPokemon(int i)
-        {
-            var resourceJson = await GetJson($"pokemon/{i}");
-            return  JsonConvert.DeserializeObject<PokemonResource>(resourceJson);
-        }
+        public async Task<PokemonResource> GetPokemon(int i) => 
+            JsonConvert.DeserializeObject<PokemonResource>(await GetJson($"pokemon/{i}"));
+        public async Task<PokemonResource> GetPokemon(string name) => 
+            JsonConvert.DeserializeObject<PokemonResource>(await GetJson($"pokemon/{name}"));
     }
 }
