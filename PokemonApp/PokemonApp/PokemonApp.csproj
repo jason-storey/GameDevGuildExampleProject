@@ -55,14 +55,10 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CoolPokemonApp.cs" />
-        <Compile Include="Factories\QueryFactory.cs" />
-        <Compile Include="Factories\PokemonUsecaseFactory.cs" />
-        <Compile Include="Models\ModelFactory.cs" />
-        <Compile Include="Models\Pokemon.cs" />
+        <Compile Include="ModelFactory.cs" />
+        <Compile Include="Pokemon.cs" />
+        <Compile Include="PokemonApiRepository.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Repositories\PokemonApiRepository.cs" />
-        <Compile Include="Usecases\SearchForPokemon.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

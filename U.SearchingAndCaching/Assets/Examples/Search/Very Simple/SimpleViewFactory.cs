@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using JCore.Application;
 using JCore.Application.Views;
-using PokemonApp.Factories;
-
 namespace JasonStorey.Examples.SimpleSearch
 {
     public class SimpleViewFactory<T> : ViewFactory<T>

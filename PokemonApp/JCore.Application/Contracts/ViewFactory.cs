@@ -1,7 +1,6 @@
-﻿
-using JCore.Application.Views;
+﻿using JCore.Application.Views;
 
-namespace PokemonApp.Factories
+namespace JCore.Application
 {
     public interface ViewFactory<in T>
     {

@@ -1,11 +1,13 @@
-﻿namespace PokemonApp
+﻿using ApiPokemon = PokemonService.Models.Pokemon;
+using UnityPokemon = PokemonApp.Pokemon;
+namespace PokemonApp
 {
     public static class ModelFactory
     {
-        public static Pokemon Convert(PokemonService.Models.Pokemon pokemon)
+        public static UnityPokemon Convert(ApiPokemon pokemon)
         {
             if (pokemon == null) return null;
-            var appPokemon = new Pokemon
+            var appPokemon = new UnityPokemon
             {
                 Id = pokemon.Id,
                 Name = pokemon.Name,

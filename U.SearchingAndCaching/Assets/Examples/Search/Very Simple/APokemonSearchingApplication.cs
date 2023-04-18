@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using JCore;
 using JCore.Application;
+using JCore.Application.UseCases;
 using JCore.Extensions;
 using PokemonApp;
-using PokemonApp.Factories;
 using PokemonApp.Repositories;
-using PokemonService;
 using UnityEngine;
 using static JCore.Application.UseCaseMessages;
-
 namespace JasonStorey.Examples.SimpleSearch
 {
     public class APokemonSearchingApplication : MonoBehaviour
@@ -35,13 +33,13 @@ namespace JasonStorey.Examples.SimpleSearch
         [ContextMenu("Search")]
         void PerformSearch() => Search.PerformSearch();
 
-        CoolPokemonApp App => new(Ui, Data);
+        App<Pokemon> App => new(Ui, Data);
         
-        SearchForPokemon Search
+        SearchByString<Pokemon> Search
         {
             get
             {
-                var search = App.SearchForPokemon();
+                var search = App.Search();
                 search.AttemptEmptySearchAnyway = _allowEmptySearches;
                 return search;
             }
@@ -67,6 +65,6 @@ namespace JasonStorey.Examples.SimpleSearch
             if(message.Is(INVALID_SEARCH_STRING)) Debug.LogWarning("There was a problem with your search query!");
         }
 
-        IReadonlyRepository<Pokemon> Data => _useFakeData ? _fakeData.ToRepository() : new PokemonApi().ToRepository();
+        IReadonlyRepository<Pokemon> Data => _useFakeData ? _fakeData.ToRepository() : new PokemonApiRepository();
     }
 }

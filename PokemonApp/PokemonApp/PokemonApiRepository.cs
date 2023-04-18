@@ -51,9 +51,4 @@ namespace PokemonApp.Repositories
         {
         }
     }
-
-    public static class RepositoryExtensions
-    {
-        public static IReadonlyRepository<Pokemon> ToRepository(this PokemonApi api) => new PokemonApiRepository(api);
-    }
 }
