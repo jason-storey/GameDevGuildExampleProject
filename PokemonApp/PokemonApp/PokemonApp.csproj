@@ -34,14 +34,14 @@
     <Target Name="CopyOutputDllsToPlugins" AfterTargets="Build">
         <PropertyGroup>
             <PluginsFolder>..\..\U.SearchingAndCaching\Assets\Plugins\JasonStorey</PluginsFolder>
-            <OutputDll>$(TargetDir)$(TargetName)$(TargetExt)</OutputDll>
+            <OutputPath>$(TargetDir)</OutputPath>
         </PropertyGroup>
         <ItemGroup>
-            <DllToCopy Include="$(OutputDll)" />
+            <DllsToCopy Include="$(OutputPath)*.dll" Exclude="$(OutputPath)UnityEngine.dll;$(OutputPath)Newtonsoft.Json.dll" />
         </ItemGroup>
         <MakeDir Directories="$(PluginsFolder)" Condition="!Exists('$(PluginsFolder)')" />
-        <Copy SourceFiles="@(DllToCopy)" DestinationFolder="$(PluginsFolder)" SkipUnchangedFiles="true" />
-        <Message Text="Output DLLs have been copied to the 'plugins' folder" Importance="high" />
+        <Copy SourceFiles="@(DllsToCopy)" DestinationFolder="$(PluginsFolder)" SkipUnchangedFiles="true" />
+        <Message Text="Output DLLs and their dependencies (excluding UnityEngine.dll) have been copied to the 'plugins' folder" Importance="high" />
     </Target>
     <ItemGroup>
         <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -55,8 +55,6 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Pokemon\Pokemon.cs" />
-        <Compile Include="Pokemon\PokemonSearchExtensions.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="StringSearch\Soundex.cs" />
     </ItemGroup>
@@ -68,10 +66,15 @@
         <Project>{cab1e194-cb64-446b-859f-ff65bea353ae}</Project>
         <Name>JCore</Name>
       </ProjectReference>
+      <ProjectReference Include="..\PokemonService\PokemonService.csproj">
+        <Project>{916da447-062b-43fd-9690-1d3effda0efc}</Project>
+        <Name>PokemonService</Name>
+      </ProjectReference>
     </ItemGroup>
     <ItemGroup>
       <Folder Include="InvertedIndex" />
       <Folder Include="Models" />
+      <Folder Include="Pokemon" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

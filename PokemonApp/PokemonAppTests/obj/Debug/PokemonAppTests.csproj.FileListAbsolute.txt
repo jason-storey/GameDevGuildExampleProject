@@ -21,10 +21,10 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\obj
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\obj\Debug\PokemonAppTests.csproj.CopyComplete
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\obj\Debug\PokemonAppTests.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\obj\Debug\PokemonAppTests.pdb
-C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.dll
-C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.xml
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\Data\pokemon.json
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JCore.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JCore.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\PokemonService.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\PokemonService.pdb
