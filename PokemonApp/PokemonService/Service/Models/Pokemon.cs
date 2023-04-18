@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PokemonApp.Pokemon;
 using PokemonService;
-namespace PokemonApp.Pokemon
+using PokemonService.Models;
+
+namespace PokemonService.Models
 {
     [Serializable]
     public class Pokemon

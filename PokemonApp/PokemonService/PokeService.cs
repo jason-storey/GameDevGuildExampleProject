@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using PokemonApp.Pokemon;
+using PokemonService.Models;
 using static ModelFactory;
 namespace PokemonService
 {
