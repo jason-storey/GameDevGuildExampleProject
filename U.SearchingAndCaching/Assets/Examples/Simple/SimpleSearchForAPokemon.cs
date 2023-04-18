@@ -4,6 +4,7 @@ using System.Linq;
 using JCore;
 using JCore.Application;
 using JCore.Application.Views;
+using JCore.Extensions;
 using PokemonApp;
 using PokemonApp.Factories;
 using UnityEngine;
@@ -21,19 +22,15 @@ namespace JasonStorey.Examples.SimpleSearch
         [SerializeField]
         List<Pokemon> _results;
 
-        SearchForPokemon _useCase;
-        
         [ContextMenu("Search")]
         void PerformSearch()
         {
-            _useCase = new Application(TheUi,ThePokemon).SearchForPokemon();
-            ThePokemon.SetList(_available);
-            _useCase.PerformSearch();
+            var app = new Application(Ui, _available.ToRepository());
+           app.SearchForPokemon().PerformSearch();
         }
 
         #region Plumbing
-        RepositoryFromList<Pokemon> ThePokemon { get; } = new(); 
-        Views TheUi => new(() => _search, r => _results = r.ToList());
+        Views Ui => new(() => _search, r => _results = r.ToList());
         
         #endregion
     }

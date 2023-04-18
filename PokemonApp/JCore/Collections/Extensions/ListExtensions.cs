@@ -13,6 +13,7 @@ namespace JCore.Extensions
                     list.RemoveAt(i);
         }
 
-
+        public static RepositoryFromList<T> ToRepository<T>(this IList<T> items) => new RepositoryFromList<T>(items);
+        
     }
 }

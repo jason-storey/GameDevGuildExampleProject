@@ -10,6 +10,7 @@ namespace JCore
         List<T> _items;
         readonly Func<IList<T>,T,string> _idFilter;
 
+        public RepositoryFromList(IEnumerable<T> items) : this(items.ToList(), CreateIDFromIndex) { }
         public RepositoryFromList() : this(new List<T>(),CreateIDFromIndex) { }
 
         static string CreateIDFromIndex(IList<T> all,T current) => (all.IndexOf(current)+1).ToString();
@@ -21,9 +22,10 @@ namespace JCore
             _idFilter = idFilter;
         }
         
-
         public void SetList(List<T> items) => _items = items;
         public void AddRange(params T[] items) => _items.AddRange(items);
+
+        public static implicit operator RepositoryFromList<T>(List<T> items) => new RepositoryFromList<T>(items);
 
         public IEnumerator<T> GetEnumerator() => _items.GetEnumerator();
 
