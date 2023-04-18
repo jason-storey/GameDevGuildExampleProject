@@ -4,5 +4,6 @@
     {
         View View { get; }
         void PerformSearch();
+        void UpdateAutoComplete();
     }
 }

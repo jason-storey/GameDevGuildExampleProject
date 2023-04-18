@@ -4,12 +4,12 @@ using JCore.Collections;
 using JCore.Extensions;
 namespace JCore.Search
 {
-    public class SearchEngine
+    public class SearchEngineSimple
     {
         AutocompleteTrie _autoComplete;
         BKTree _spellcheck;
         HashedListDictionary<string> _phonetics;
-        public SearchEngine(List<string> documents)
+        public SearchEngineSimple(List<string> documents)
         {
             _autoComplete = new AutocompleteTrie();
             _spellcheck = new BKTree();

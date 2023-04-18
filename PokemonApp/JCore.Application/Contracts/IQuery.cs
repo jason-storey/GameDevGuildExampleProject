@@ -10,6 +10,6 @@ namespace JCore.Application
 
     public interface IQueryFactory<T>
     {
-        IQuery<T> Search(string keyword);
+        IQuery<T> Search(string query);
     }
 }

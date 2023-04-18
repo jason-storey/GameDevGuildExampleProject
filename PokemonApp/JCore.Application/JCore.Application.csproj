@@ -46,6 +46,8 @@
         <Compile Include="Presenters\StringSearchPresenter.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Queries\SearchARepositoryByString.cs" />
+        <Compile Include="Queries\UseSearchEngineByPredicate.cs" />
+        <Compile Include="Queries\UseSearchEngineByString.cs" />
         <Compile Include="QueryFactory.cs" />
         <Compile Include="UseCases\SearchByString.cs" />
         <Compile Include="UseCases\UseCaseMessages.cs" />

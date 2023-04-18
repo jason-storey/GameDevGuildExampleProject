@@ -5,12 +5,14 @@ namespace JCore.Application.Views
     public class Ui_Search_Simple<T> : StringSearchView<T>
     {
         readonly Func<string> _provideSearch;
+        readonly Action<IEnumerable<string>> _autoComplete;
         readonly Action<IEnumerable<T>> _receiveResults;
         readonly Action<Message> _messageHandler;
 
-        public Ui_Search_Simple(Func<string> provideSearch,Action<IEnumerable<T>> receiveResults,Action<Message> messageHandler)
+        public Ui_Search_Simple(Func<string> provideSearch,Action<IEnumerable<string>> autoComplete, Action<IEnumerable<T>> receiveResults,Action<Message> messageHandler)
         {
             _provideSearch = provideSearch;
+            _autoComplete = autoComplete;
             _receiveResults = receiveResults;
             _messageHandler = messageHandler;
         }
@@ -26,5 +28,9 @@ namespace JCore.Application.Views
         }
 
         public bool ClearSearchAfterResultsReturned { get; set; }
+        public IEnumerable<string> AutoComplete
+        {
+            set => _autoComplete?.Invoke(value);
+        }
     }
 }

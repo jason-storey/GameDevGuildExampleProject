@@ -11,9 +11,12 @@ namespace JasonStorey.Examples.SimpleSearch
         Action<IEnumerable<T>> _results;
         public void SetResultsDisplay(Action<IEnumerable<T>> results) => _results = results;
 
+        public void SetAutoComplete(Action<IEnumerable<string>> autoComplete) => _autoComplete = autoComplete;
+        
         Action<Message> _messages;
+        Action<IEnumerable<string>> _autoComplete;
         public void SetMessageHandler(Action<Message> message) => _messages = message; 
         
-        public StringSearchView<T> Searching() => new Ui_Search_Simple<T>(_search,_results,_messages);
+        public StringSearchView<T> Searching() => new Ui_Search_Simple<T>(_search,_autoComplete,_results,_messages);
     }
 }

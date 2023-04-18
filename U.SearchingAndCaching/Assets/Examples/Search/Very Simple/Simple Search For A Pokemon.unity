@@ -4014,7 +4014,8 @@ MonoBehaviour:
     Types: []
   _useFakeData: 0
   _allowEmptySearches: 0
-  _search: charmander
+  _search: 
+  _autoComplete: []
   _results:
   - Name: charmander
     Id: 4

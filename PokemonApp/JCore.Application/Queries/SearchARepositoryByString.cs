@@ -18,6 +18,4 @@ namespace JCore.Application.Queries
         public async Task<IEnumerable<T>> Execute() => new List<T> {_repository.GetById(_query)};
 #pragma warning restore CS1998
     }
-    
-
 }

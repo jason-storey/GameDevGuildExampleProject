@@ -9,5 +9,6 @@ namespace JCore.Application.Views
         IEnumerable<T> Results { set; }
 
         bool ClearSearchAfterResultsReturned { get; set; }
+        IEnumerable<string> AutoComplete { set; }
     }
 }
