@@ -11,3 +11,5 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debu
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\JCore.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\JCore.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\PokemonService.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\PokemonService.pdb
