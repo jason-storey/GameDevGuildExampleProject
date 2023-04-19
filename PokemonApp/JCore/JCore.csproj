@@ -44,6 +44,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Caches\PartialResultCache.cs" />
         <Compile Include="Collections\AutocompleteTrie.cs" />
         <Compile Include="Collections\BKTree.cs" />
         <Compile Include="Collections\DropoutStack.cs" />
@@ -62,9 +63,17 @@
         <Compile Include="Contracts\IReadonlyRepository.cs" />
         <Compile Include="Contracts\IRepository.cs" />
         <Compile Include="Contracts\RepositoryFromList.cs" />
+        <Compile Include="Hashing\HashingExtensions.cs" />
+        <Compile Include="Hashing\NonCryptographic\CityHash.cs" />
+        <Compile Include="Hashing\NonCryptographic\FarmHash32.cs" />
+        <Compile Include="Hashing\NonCryptographic\FnVHash.cs" />
+        <Compile Include="Hashing\NonCryptographic\MurmerHash.cs" />
+        <Compile Include="Hashing\NonCryptographic\XXHash.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Search\Algorithms\AlgorithmExtensions.cs" />
         <Compile Include="Search\Algorithms\CachedStringAlgorithm.cs" />
         <Compile Include="Search\Algorithms\CachedStringListAlgorithm.cs" />
+        <Compile Include="Search\Algorithms\Distances\JaroWinkler.cs" />
         <Compile Include="Search\Algorithms\Distances\Levenstein.cs" />
         <Compile Include="Search\Algorithms\ISearchAlgorithm.cs" />
         <Compile Include="Search\Algorithms\Phonetic\Caverphone\Caverphone.cs" />
@@ -80,13 +89,10 @@
         <Compile Include="Search\Algorithms\Phonetic\NYSSIS\NYSSISAlgorithm.cs" />
         <Compile Include="Search\Algorithms\Phonetic\Soundex\Soundex.cs" />
         <Compile Include="Search\Algorithms\Phonetic\Soundex\SoundexAlgorithm.cs" />
-        <Compile Include="Search\AutoComplete\Autocomplete.cs" />
         <Compile Include="Search\AutoComplete\IAutoCompleteProvider.cs" />
         <Compile Include="Search\AutoComplete\PropertySelectors.cs" />
-        <Compile Include="Search\Engine\ISearchEngine.cs" />
-        <Compile Include="Search\Engine\SearchEngineSimple.cs" />
-        <Compile Include="Search\Engine\SearchEngineV1.cs" />
         <Compile Include="Search\FuzzyMatcher\IFuzzyMatcher.cs" />
+        <Compile Include="Search\QueryEvaluation\IQueryEvaluator.cs" />
         <Compile Include="Search\Ranking\BM25.cs" />
         <Compile Include="Search\Ranking\TfIdfRanker.cs" />
         <Compile Include="Search\SpellingCorrection\BKLevensteinSpellingCorrector.cs" />
@@ -96,6 +102,7 @@
         <Compile Include="Search\Tokenizers\ITokenizer.cs" />
         <Compile Include="Search\Tokenizers\SimpleTokenizer.cs" />
         <Compile Include="Search\Tokenizers\StopwordRemovalTokenizer.cs" />
+        <Compile Include="Search\Tokenizers\WhiteSpaceTokenizer.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

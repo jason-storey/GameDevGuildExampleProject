@@ -1,5 +1,6 @@
 using System;
 using JCore;
+using JCore.AdvancedSearch;
 using JCore.Application;
 using JCore.Application.UseCases;
 using JCore.Search;

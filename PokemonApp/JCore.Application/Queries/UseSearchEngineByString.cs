@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using JCore.AdvancedSearch;
 using JCore.Search;
 
 namespace JCore.Application.Queries
@@ -17,7 +18,8 @@ namespace JCore.Application.Queries
 
         public async Task<IEnumerable<T>> Execute()
         {
-            return _engine.Search(_query);
+            var returned = _engine.Search(_query);
+            return returned.Results;
         }
     }
 }

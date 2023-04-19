@@ -8,7 +8,7 @@ namespace JCore
         readonly List<char> _booleanOperators = new List<char> { '&', '|', '(', ')' };
         readonly List<char> _wildcardOperators = new List<char> { '*' };
 
-        public IList<string> Tokenize(string text)
+        public IEnumerable<string> Tokenize(string text)
         {
             IList<string> tokens = new List<string>();
 

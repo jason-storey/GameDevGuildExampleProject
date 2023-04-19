@@ -39,7 +39,7 @@ namespace JCore.Search
         }
         
         public static bool Match(this string word1, string word2) => Generate(word1) == Generate(word2);
-        public static string ToMetaphone(this string s) => Generate(s);
+        public static string ToCaverphonee(this string s) => Generate(s);
 
         public static HashedListDictionary<string> CreateCache(IEnumerable<string> elements)
         {

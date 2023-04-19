@@ -26,7 +26,7 @@ namespace JCore
 
             foreach (var document in documents)
             {
-                var length = _tokenizer.Tokenize(document).Count;
+                var length = _tokenizer.Tokenize(document).Count();
                 _documentLengths[document] = length;
                 _averageDocumentLength += length;
             }
@@ -36,7 +36,7 @@ namespace JCore
 
         public List<string> RankDocuments(string query)
         {
-            IList<string> queryTerms = _tokenizer.Tokenize(query);
+            IList<string> queryTerms = _tokenizer.Tokenize(query).ToList();
             var documentScores = new Dictionary<string, double>();
 
             foreach (var document in _documents)
@@ -63,7 +63,7 @@ namespace JCore
         double TermFrequency(string term, string document)
         {
             // Implementation to calculate the term frequency of 'term' in 'document'
-            IList<string> documentTerms = _tokenizer.Tokenize(document);
+            IList<string> documentTerms = _tokenizer.Tokenize(document).ToList();
             var termCount = documentTerms.Count(t => t == term);
             return ((double)termCount) / documentTerms.Count;
         }

@@ -4,6 +4,6 @@ namespace JCore
 {
     public interface ITokenizer
     {
-        IList<string> Tokenize(string text);
+        IEnumerable<string> Tokenize(string text);
     }
 }

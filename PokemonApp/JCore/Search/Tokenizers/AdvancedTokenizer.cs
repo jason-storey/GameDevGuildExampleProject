@@ -5,9 +5,9 @@ namespace JCore
 {
     public class AdvancedTokenizer : ITokenizer
     {
-        private readonly List<char> _punctuationMarks = new List<char> { '.', ',', '!', '?', ';', ':', '-', '(', ')', '[', ']', '{', '}' };
+        readonly List<char> _punctuationMarks = new List<char> { '.', ',', '!', '?', ';', ':', '-', '(', ')', '[', ']', '{', '}' };
 
-        public IList<string> Tokenize(string text)
+        public IEnumerable<string> Tokenize(string text)
         {
             List<string> tokens = new List<string>();
 

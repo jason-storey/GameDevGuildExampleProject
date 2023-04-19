@@ -1,16 +1,15 @@
 using JCore;
+using JCore.AdvancedSearch;
 using JCore.Application;
+using JCore.Collections;
 using JCore.Search;
+using JSearch;
 
 namespace PokemonApp.SimpleSearchApp
 {
     public class SearchApplicationFactory<T>
     {
-        ISearchEngine<T> CreateSearchEngine() => 
-            new SearchEngineV1<T>(
-                _data, 
-                new Autocomplete<T>(_properties),
-                new BKLevensteinSpellingCorrector(), _properties);
+        ISearchEngine<T> CreateSearchEngine() => new SearchEngineFactory<T>(new InvertedIndex<string>()).Create(_data);
 
         #region plumbing
 

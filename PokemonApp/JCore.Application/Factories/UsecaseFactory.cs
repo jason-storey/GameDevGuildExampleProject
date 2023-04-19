@@ -1,3 +1,4 @@
+using JCore.AdvancedSearch;
 using JCore.Application.UseCases;
 using JCore.Search;
 

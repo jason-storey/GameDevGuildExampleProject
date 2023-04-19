@@ -1,5 +1,5 @@
-﻿using JCore.Application.UseCases;
-using JCore.Search;
+﻿using JCore.AdvancedSearch;
+using JCore.Application.UseCases;
 
 namespace JCore.Application
 {

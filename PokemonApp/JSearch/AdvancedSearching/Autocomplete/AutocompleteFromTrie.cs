@@ -4,17 +4,21 @@ using System.Linq;
 
 namespace JCore.Search
 {
-    public class Autocomplete<T> : IAutoCompleteProvider<T>
+    public class AutocompleteFromTrie<T> : IAutoCompleteProvider<T>
     {
         readonly PropertySelectors<T> _properties;
 
-        public Autocomplete(PropertySelectors<T> properties)
+        public AutocompleteFromTrie(PropertySelectors<T> properties)
         {
             _properties = properties;
             _trie = new AutocompleteTrie();
             _data = new HashSet<T>();
         }
 
+        public AutocompleteFromTrie()
+        {
+            
+        }
         readonly HashSet<T> _data;
         public void AddSelector(Func<T, string> selector)
         {

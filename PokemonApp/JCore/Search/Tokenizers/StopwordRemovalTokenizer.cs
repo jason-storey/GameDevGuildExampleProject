@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace JCore
 {
@@ -6,15 +7,7 @@ namespace JCore
     {
         readonly List<string> _stopwords = new List<string> { "the", "and", "or", "a", "an" };
 
-        public IList<string> Tokenize(string text)
-        {
-            IList<string> tokens = new List<string>();
-
-            foreach (string word in text.Split(' '))
-            {
-                if (!_stopwords.Contains(word.ToLower())) tokens.Add(word);
-            }
-            return tokens;
-        }
+        public IEnumerable<string> Tokenize(string text) => 
+            text.Split(' ').Where(word => !_stopwords.Contains(word.ToLower())).ToList();
     }
 }

@@ -23,6 +23,8 @@ namespace JCore.Collections
             return dict;
         }
         
+        public bool TryGet(string key, out HashSet<T> item) => _indexes.TryGetValue(key,out item);
+
         public IEnumerable<T> this[int index]
         {
             get
@@ -178,5 +180,7 @@ namespace JCore.Collections
                 return invertedIndex;
             }
         }
+
+ 
     }
 }

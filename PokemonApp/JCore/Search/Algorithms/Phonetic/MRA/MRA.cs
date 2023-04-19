@@ -7,6 +7,8 @@ namespace JCore.Search
 {
     public static class MRA
     {
+        const float DEFAULT_SCORE = 0.7f;
+        
         public static int GetScore(string word1, string word2)
         {
             if (string.IsNullOrEmpty(word1) || string.IsNullOrEmpty(word2)) return 0;
@@ -62,7 +64,8 @@ namespace JCore.Search
             word = SimplifyConsonants(word);
             return word.Length > 6 ? word.Substring(0, 6) : word;
         }
-        
+
+        public static bool IsMatch(string a, string b) => ToMRAScore(a, b) >= DEFAULT_SCORE;
 
         static string RemoveVowels(string word)
         {

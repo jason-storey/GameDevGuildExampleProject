@@ -15,3 +15,5 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debu
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\PokemonService.pdb
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\JCore.Application.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\JCore.Application.pdb
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\JSearch.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonApp\bin\Debug\JSearch.pdb

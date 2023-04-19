@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JCore.AdvancedSearch;
 using JCore.Application.Presenters;
 using JCore.Application.Views;
-using JCore.Search;
 using static JCore.Application.UseCaseMessages;
 namespace JCore.Application.UseCases
 {
@@ -58,7 +58,7 @@ namespace JCore.Application.UseCases
         public void UpdateAutoComplete()
         {
             var search = _view.Search;
-            if (_search.TrySpellcheck(search, out var s))
+            if (_search.HasSpellcheckSuggestion(search, out var s))
             {
                 _view.DidYouMean = s;
                 Say(PROBABLE_SPELLING_MISTAKE);

@@ -32,3 +32,5 @@ C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.dll
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JCore.Application.pdb
 C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\UnityEngine.xml
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JSearch.dll
+C:\Users\jason\Desktop\GameDevGuildExampleProject\PokemonApp\PokemonAppTests\bin\Debug\JSearch.pdb

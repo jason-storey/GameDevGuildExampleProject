@@ -49,7 +49,7 @@ namespace JCore
 
         Dictionary<string, double> CalculateTfIdfVector(string text)
         {
-            IList<string> tokens = _tokenizer.Tokenize(text);
+            IList<string> tokens = _tokenizer.Tokenize(text).ToList();
             Dictionary<string, double> tfIdfVector = new Dictionary<string, double>();
 
             foreach (string term in tokens)

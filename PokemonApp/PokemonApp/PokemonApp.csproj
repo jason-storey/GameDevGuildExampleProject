@@ -76,6 +76,10 @@
         <Project>{cab1e194-cb64-446b-859f-ff65bea353ae}</Project>
         <Name>JCore</Name>
       </ProjectReference>
+      <ProjectReference Include="..\JSearch\JSearch.csproj">
+        <Project>{1f14186b-30de-42c7-acb3-4fd9df203a7b}</Project>
+        <Name>JSearch</Name>
+      </ProjectReference>
       <ProjectReference Include="..\PokemonService\PokemonService.csproj">
         <Project>{916da447-062b-43fd-9690-1d3effda0efc}</Project>
         <Name>PokemonService</Name>
